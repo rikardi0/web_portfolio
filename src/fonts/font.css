@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Throwup Fill";
+  src: url("Throwup-Fill.woff2") format("woff2"),
+    url("Throwup-Fill.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Throwup Stroke";
+  src: url("Throwup-Stroke.woff2") format("woff2"),
+    url("Throwup-Stroke.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BROKAT v1.0";
+  src: url("BROKATv10-Regular.woff2") format("woff2"),
+    url("BROKATv10-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
