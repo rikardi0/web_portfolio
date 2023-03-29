@@ -1,0 +1,37 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#projects-title {
+  font-size: 7rem;
+  color: #1d1d1f;
+  line-height: 10vh;
+  letter-spacing: 1.5vw;
+  text-align: center;
+  margin-top: 0vh;
+  font-family: "BROKAT v1.0";
+}
+#projects-container {
+  display: grid;
+  column-gap: 5vw;
+  row-gap: 5vw;
+  grid-template-columns: 1fr 1fr;
+}
+.project-border {
+  display: flex;
+  width: 400px;
+  height: 300px;
+  padding-inline: 0.75vw;
+  padding-block: 1vw;
+  border-radius: 0.75vw;
+  background-color: brown;
+  border: 0.25vw solid black;
+}
+.project-container {
+  width: 400px;
+  height: 300px;
+  border-radius: 1vw;
+  background-color: rgb(255, 255, 255);
+  border: 0.25vw solid black;
+}

@@ -1,10 +1,11 @@
-import Hero from './components/hero/Hero';
-
+import Body from "./components/body/Body";
 
 function App() {
   return (
-  <Hero />
-    );
+    <div>
+      <Body />
+    </div>
+  );
 }
 
 export default App;
