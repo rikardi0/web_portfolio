@@ -10,7 +10,7 @@ export default function AboutMe(props) {
     return <li>{myList}</li>;
   });
   return (
-    <section className="section" id="about">
+    <section className="section" data-label="About" id="about">
       <Divider color="#000000" size="0 0 1200 120" />
       <Divider color="#0794db" size="0 2 1200 120" />
       <div id="sign-road">

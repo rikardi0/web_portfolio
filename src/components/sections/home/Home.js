@@ -6,7 +6,7 @@ import ImageHero from "../res/ImageHero";
 const Home = (props) => {
   const { description } = props;
   return (
-    <section className="section" id="home">
+    <section className="section" data-label="Home" id="home">
       <header id="head">
         <h1 className="title">Ricardo Hurtado</h1>
       </header>

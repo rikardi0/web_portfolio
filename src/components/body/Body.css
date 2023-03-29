@@ -1,8 +1,5 @@
-#spacer {
-  background-color: rgba(7, 148, 219, 255);
-  border-top: 0.35vh solid black;
-  height: 9.5vh;
-  align-self: center;
+a {
+  text-decoration: none;
 }
 
 /* The switch - the box around the slider */
@@ -94,55 +91,12 @@ input:hover:checked + .slider:before {
   position: fixed;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
   height: 400px;
   width: 10vw;
   top: 5vh;
   left: 10px;
   z-index: 1;
   flex-direction: column;
-  background-color: #a52a2a;
-}
-.nav-link {
-  padding-inline: 1vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5vw;
-}
-.nav-label {
-  font-size: 1.25rem;
-  font-weight: 600;
-  opacity: 0;
-  transition: opacity 0.25s;
-}
-.dots {
-  background-color: #ffffff;
-  border: solid 2px black;
-  height: 15px;
-  width: 15px;
-  border-radius: 100%;
-  transition: 0.25s;
-  transition: transform 0.25s;
-}
-.dots-selected {
-  background-color: transparent;
-  border: 0;
-  height: 15px;
-  width: 15px;
-}
-.dots-selected::after {
-  opacity: 1;
-  position: relative;
-  top: -14px;
-  left: -6px;
-  content: "\1F7AC"; /* use the hex value here... */
-  font-size: 30px;
-  text-align: center;
-}
-
-.dots:hover ~ .nav-label {
-  opacity: 1;
 }
 
 #spacer-mid {
@@ -159,3 +113,64 @@ input:hover:checked + .slider:before {
   background-color: #a52a2a;
   border-bottom: solid 2px black;
 }
+
+.nav {
+  --nav-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 1;
+  left: 2vw;
+  top: 82%;
+  transform: translateY(-50%);
+}
+
+.nav-item {
+  align-items: center;
+  display: flex;
+  margin-bottom: var(--nav-gap) - 2px;
+}
+
+.nav-link:hover ~ .nav-label {
+  opacity: 1;
+}
+
+.nav-label {
+  color: #000000;
+  font-size: 1.25rem;
+  padding-inline: 1vw;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.nav-link {
+  background: rgba(255, 255, 255, 0.315);
+  border: solid 2px black;
+  border-radius: 50%;
+  height: var(--nav-gap);
+  margin-left: var(--nav-gap);
+  transition: 0.1s;
+  width: var(--nav-gap);
+}
+
+.nav-link-selected {
+  background: #000000;
+  transform: scale(1.2);
+}
+
+/*
+.nav-link-selected::after {
+  color: #000;
+  opacity: 1;
+  position: relative;
+  top: -14px;
+  left: -3px;
+  content: "\2716"; /* use the hex value here... 
+  font-size: 30px;
+  text-align: center;
+  transition: 0.25s;
+} 
+
+*/

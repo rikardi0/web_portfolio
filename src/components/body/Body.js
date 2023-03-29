@@ -1,35 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Body.css";
 import Home from "../sections/home/Home";
 import About from "../sections/about/About";
 import Projects from "../sections/projects/Projects";
 
+import navBar from "../navBar.js";
+
 let description = "";
 let about_me = "";
 let skill_list = [];
 
-const navLinks = ["home", "about", "projects"];
-
-const renderNavLink = (content) => {
-  const scrollToId = `${content.toLowerCase()}`;
-
-  const handleClickNav = () => {
-    document.getElementById(scrollToId).scrollIntoView({ behavior: "smooth" });
-  };
-
-  return (
-    <div className="nav-link" data-for-section={content} key={content}>
-      <div className="dots dots-selected" onClick={handleClickNav}></div>
-      <div className="nav-label">{content}</div>
-    </div>
-  );
-};
-
 export default function Body() {
+  useEffect(() => {
+    navBar();
+  }, []);
   const [language, setLanguage] = useState(true);
   setContent(language);
   return (
     <>
+      <Home description={description} />
       <nav id="nav-language">
         <label class="switch">
           <input
@@ -38,15 +27,13 @@ export default function Body() {
           ></input>
           <span class="slider"></span>
         </label>
-        {navLinks.map((nav) => renderNavLink(nav))}
       </nav>
-      <Home description={description} />
+
       <div id="spacer"></div>
       <About about_content={about_me} skill={skill_list} />
       <div id="spacer-mid">
         <div id="spacer-mid-details"></div>
       </div>
-
       <Projects />
     </>
   );
