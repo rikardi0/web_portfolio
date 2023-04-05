@@ -19,6 +19,7 @@
 }
 #sign-road {
   margin-left: 12vw;
+  margin-top: 5vh;
   width: fit-content;
   z-index: 1;
   display: flex;
@@ -60,7 +61,7 @@
   border-bottom: outset 0.65vh rgb(34, 27, 27);
 }
 .wood-base {
-  height: 15vh;
+  height: 11vh;
   width: 3vw;
   background-color: #a46532;
   border: 0.15vw solid black;
@@ -97,4 +98,11 @@
   padding: 2vh;
   font-size: 1rem;
   font-weight: bolder;
+}
+.minimize :hover {
+  fill: red;
+}
+
+.close :hover {
+  fill: red;
 }

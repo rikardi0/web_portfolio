@@ -1,5 +1,5 @@
 import React from "react";
-import Images from "../res/images/index";
+import Images from "../sections/res/images/index";
 
 let projectList = [
   { path: Images.close_tab, color: "red" },

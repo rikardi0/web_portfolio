@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Arvo&display=swap");
 @import url("./fonts/font.css");
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #f4f5f4;

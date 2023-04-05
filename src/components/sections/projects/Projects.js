@@ -1,11 +1,15 @@
 import React from "react";
 import "../projects/Projects.css";
-import ListProjects from "../res/GridElement";
+import ListProjects from "../../utils/GridElement";
+import DividerLetter from "../../utils/DividerLetter";
 
-export default function Projects() {
+export default function Projects(props) {
+  let { title } = props;
   return (
     <section className="section" data-label="Projects" id="projects">
-      <h2 id="projects-title">Projects</h2>
+      <div id="project-title">
+        <DividerLetter word={title} />
+      </div>
       <section id="projects-container">
         <ListProjects />
       </section>

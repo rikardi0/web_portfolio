@@ -26,6 +26,13 @@ a {
   height: 0;
 }
 
+#spacer {
+  background-color: rgba(7, 148, 219, 255);
+  border-top: 0.35vh solid black;
+  height: 9.5vh;
+  align-self: center;
+}
+
 /* The slider */
 .slider {
   box-sizing: border-box;
@@ -45,7 +52,6 @@ a {
   box-sizing: border-box;
   position: absolute;
   content: "Ñ";
-  text-decoration: line-through;
   height: var(--switch_height);
   width: var(--switch_height);
   border: 2px solid var(--outline_color);
@@ -74,8 +80,8 @@ input:hover + .slider:before {
 }
 
 input:checked + .slider:before {
-  content: "Ñ";
-  text-decoration: none;
+  content: "";
+
   transform: translateX(calc(var(--switch_width) - var(--switch_height)))
     translateY(-0.2em);
 }
@@ -87,14 +93,12 @@ input:hover:checked + .slider:before {
   box-shadow: 0 0.3em 0 var(--outline_color);
 }
 
-#nav-language {
+#language {
   position: fixed;
   display: flex;
   align-items: flex-start;
-  height: 400px;
-  width: 10vw;
   top: 5vh;
-  left: 10px;
+  right: 10px;
   z-index: 1;
   flex-direction: column;
 }
@@ -113,17 +117,22 @@ input:hover:checked + .slider:before {
   background-color: #a52a2a;
   border-bottom: solid 2px black;
 }
-
-.nav {
-  --nav-gap: 5px;
+.nav-section {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   z-index: 1;
   left: 2vw;
-  top: 82%;
-  transform: translateY(-50%);
+  top: 5%;
+}
+.nav {
+  --nav-gap: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-item {
@@ -174,3 +183,20 @@ input:hover:checked + .slider:before {
 } 
 
 */
+.container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 20px;
+}
+.line-spacer {
+  height: 40vh;
+  width: 0.05vw;
+  background-color: black;
+}

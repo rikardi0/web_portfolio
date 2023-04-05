@@ -1,10 +1,18 @@
-<div class="section" id="home" data-label="Home">Home</div>
-<div class="section" id="about" data-label="About Us">About Us</div>
-<div class="section" id="contact" data-label="Get In Touch">Get In Touch</div>
-<script>
-    function activateNavigation() {
+import Telephone from "../sections/res/images/svg/Telephone";
+import React from "react";
+import ReactDOM from "react-dom";
+export default function activateNavigation() {
   const sections = document.querySelectorAll(".section");
   const navContainer = document.createElement("nav");
+  const navSection = document.createElement("section");
+  navSection.classList.add("nav-section");
+
+  const containerButton = document.createElement("div");
+  const img = document.createElement("div");
+  img.className = "telephone";
+  ReactDOM.render(<Telephone />, img);
+  const contactButton = document.createElement("div");
+  const lineSpacer = document.createElement("div");
   const navItems = Array.from(sections).map((section) => {
     return `
                     <div class="nav-item" data-for-section="${section.id}">
@@ -13,8 +21,14 @@
                     </div>
                 `;
   });
-
+  containerButton.classList.add("container-button");
+  contactButton.classList.add("contact-button");
+  lineSpacer.classList.add("line-spacer");
+  contactButton.appendChild(img);
+  containerButton.appendChild(contactButton);
+  containerButton.appendChild(lineSpacer);
   navContainer.classList.add("nav");
+
   navContainer.innerHTML = navItems.join("");
 
   const observer = new IntersectionObserver(
@@ -31,14 +45,11 @@
         )
         .classList.add("nav-link-selected");
     },
-    { threshold: 0.5 }
+    { threshold: 0.65 }
   );
 
   sections.forEach((section) => observer.observe(section));
-
-  document.body.appendChild(navContainer);
+  navSection.appendChild(containerButton);
+  navSection.appendChild(navContainer);
+  document.body.appendChild(navSection);
 }
-
-activateNavigation();
-
-</script>
