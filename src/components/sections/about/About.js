@@ -5,9 +5,9 @@ import MinimizeTab from "../res/images/svg/Minimize.js";
 import "./About.css";
 
 export default function AboutMe(props) {
-  let { about_content, skill_title } = props;
-  const skill_list = props.skill;
-  const list_items = skill_list.map((myList) => {
+  let { aboutContent, aboutTitle, skillTitle } = props;
+  const skillList = props.skill;
+  const listItems = skillList.map((myList) => {
     return <li>{myList}</li>;
   });
   return (
@@ -17,8 +17,8 @@ export default function AboutMe(props) {
       <div id="sign-road">
         <div id="skill-border">
           <section id="skill-set">
-            <h2>{skill_title}</h2>
-            <ul className="skill-list"> {list_items} </ul>,
+            <h2>{skillTitle}</h2>
+            <ul className="skill-list"> {listItems} </ul>,
           </section>
         </div>
         <section id="wood-container">
@@ -33,9 +33,9 @@ export default function AboutMe(props) {
             <MinimizeTab />
           </div>
 
-          <span className="tab-text">About-Me</span>
+          <span className="tab-text">{aboutTitle}</span>
         </div>
-        <p>{about_content}</p>
+        <p>{aboutContent}</p>
       </section>
     </section>
   );

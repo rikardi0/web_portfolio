@@ -5,10 +5,10 @@ import "./Svg.css";
 const ImageHero = (props) => {
   const { size, type, deg } = props;
 
-  let height = `${size}vh`;
-  let heightScreen = size - 1.25;
-  let width = size / 4.35;
-  let widthScreen = width - 1;
+  let height = size;
+  let heightScreen = size - 10;
+  let width = size / 2;
+  let widthScreen = width - 10;
   let detailName = ["details-left", "details-center", "details-right"];
   return (
     <div
@@ -16,14 +16,20 @@ const ImageHero = (props) => {
       className="phone-border"
       style={{
         height: height,
-        width: `${width}vw`,
+        minHeight: height,
+        width: width,
+
         transform: `rotate(${deg}deg)`,
       }}
     >
       <div
         id="screen"
         className="screen"
-        style={{ height: `${heightScreen}vh`, width: `${widthScreen}vw` }}
+        style={{
+          height: heightScreen,
+          maxHeight: heightScreen,
+          width: widthScreen,
+        }}
       >
         <div id={detailName[type]}></div>
       </div>
