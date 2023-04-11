@@ -1,7 +1,8 @@
 #about {
   display: flex;
-
-  align-items: flex-start;
+  flex-direction: column;
+  /* flex direction sin,  */
+  align-items: center;
   justify-content: flex-start;
   background-color: #f3f3f3;
   opacity: 1;
@@ -13,21 +14,24 @@
 #skill-set h2 {
   text-transform: uppercase;
   line-height: 0px;
-  margin: 0px;
+  margin-top: 5vh;
   color: white;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 #sign-road {
-  margin-left: 12vw;
-  margin-top: 5vh;
+  /* media
+  margin-left: 12vw; 
+  margin-top: 5vh;*/
   width: fit-content;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 .skill-list {
+  user-select: none;
   font-size: 2rem;
   color: aliceblue;
 }
@@ -42,27 +46,28 @@
 }
 #skill-set {
   display: flex;
+
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2.5vh;
-  min-height: 45vh;
-  min-width: 40vw;
   padding: 2vh;
   background-color: #08843c;
   border: 0.01vw solid black;
   border-radius: 3vh;
 }
 #wood-container {
+  min-width: 200px;
   display: flex;
-  padding-inline: 100px;
-  justify-content: center;
-  gap: 15vw;
-  border-bottom: outset 0.65vh rgb(34, 27, 27);
+  justify-content: space-between;
+  /*
+  border-bottom: outset 0.65vh rgb(34, 27, 27); */
 }
 .wood-base {
+  /*
   height: 11vh;
-  width: 3vw;
+  width: 3vw; */
+  opacity: 0;
   background-color: #a46532;
   border: 0.15vw solid black;
   border-right: 1vw solid black;
@@ -70,12 +75,19 @@
   border-bottom: 0px;
 }
 #about-me {
+  /*
   margin-top: 30vh;
   margin-left: 10vw;
+*/
+  margin-top: 5vh;
+  margin-right: 2vw;
   align-self: flex-end;
   z-index: 1;
+  /*
   height: 50vh;
-  width: 25vw;
+  width: 25vw; */
+  height: 200px;
+  width: 250px;
   border: 0.45vh solid black;
   border-right: 1.5vh solid black;
   background-color: #e7e7e7;
@@ -91,7 +103,7 @@
   justify-content: space-between;
   background-color: rgb(143, 143, 143);
   border-bottom: 0.25vh solid black;
-  width: 25vw;
+  width: 250px;
   height: 6vh;
 }
 .tab-text {

@@ -4,12 +4,11 @@
 
 .letter {
   color: rgb(27, 27, 27);
-  font-size: 11em;
+  line-height: 50px;
+  font-size: 8em;
   font-family: "BROKAT v1.0";
   font-weight: 700;
-  font-family: "BROKAT v1.0";
   cursor: pointer;
-  margin-right: 5px;
   letter-spacing: 0.5vw;
   transition: all 0.5s ease;
   user-select: none;
