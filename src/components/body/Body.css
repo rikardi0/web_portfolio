@@ -178,7 +178,7 @@ input:hover:checked + .slider:before {
   width: 20px;
 }
 .line-spacer {
-  height: 40vh;
+  height: 42vh;
   width: 0.05vw;
   margin-top: 2vh;
   background-color: black;
