@@ -1,7 +1,7 @@
 import React from "react";
 import "../projects/Projects.css";
-import ListProjects from "../../utils/GridElement";
-import DividerLetter from "../../utils/DividerLetter";
+import ListProjects from "../../ui/GridElement";
+import DividerLetter from "../../ui/DividerLetter";
 
 export default function Projects(props) {
   let { title } = props;

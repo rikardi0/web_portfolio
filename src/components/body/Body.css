@@ -5,7 +5,7 @@ a {
 /* The switch - the box around the slider */
 .switch {
   /* Variables */
-  --switch_width: 80px;
+  --switch_width: 100px;
   --switch_height: 6.5vh;
   --thumb_color: #e8e8e8;
   --track_color: #b4b3b3;
@@ -94,11 +94,12 @@ input:hover:checked + .slider:before {
 }
 
 #language {
+  transition: all 0.1s;
   position: fixed;
   display: flex;
   align-items: flex-start;
-  bottom: 0px;
-  left: 0px;
+  bottom: 5px;
+  right: 5px;
   z-index: 10;
   flex-direction: column;
 }
@@ -125,7 +126,7 @@ input:hover:checked + .slider:before {
   position: fixed;
   z-index: 1;
   left: 2vw;
-  top: 10%;
+  top: 12%;
 }
 .nav {
   --nav-gap: 5px;
@@ -141,10 +142,6 @@ input:hover:checked + .slider:before {
   margin-bottom: var(--nav-gap) - 2px;
 }
 
-.nav-link:hover ~ .nav-label {
-  opacity: 1;
-}
-
 .nav-label {
   color: #000000;
   font-size: 1.25rem;
@@ -155,7 +152,7 @@ input:hover:checked + .slider:before {
 }
 
 .nav-link {
-  background: rgba(255, 255, 255, 0.315);
+  background: rgba(179, 179, 179, 0.062);
   border: solid 2px black;
   border-radius: 50%;
   height: var(--nav-gap);
@@ -181,8 +178,19 @@ input:hover:checked + .slider:before {
   width: 20px;
 }
 .line-spacer {
-  height: 50vh;
+  height: 40vh;
   width: 0.05vw;
   margin-top: 2vh;
   background-color: black;
+}
+
+@media only screen and (min-width: 850px) {
+  #language {
+    top: 5vh;
+    z-index: 10;
+    flex-direction: column;
+  }
+  .nav-link:hover ~ .nav-label {
+    opacity: 1;
+  }
 }

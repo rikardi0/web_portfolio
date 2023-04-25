@@ -6,7 +6,7 @@
   background-color: rgb(255, 218, 5);
   margin-top: 8vh;
   border-top: 2px solid black;
-  height: 40vh;
+  height: 30vh;
 }
 #svg-container {
   width: 60vw;
@@ -17,7 +17,7 @@
 .title-contact {
   padding: 0.5vh;
   user-select: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Graduate", cursive;
   font-weight: 600;
   letter-spacing: 1vw;

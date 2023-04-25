@@ -1,5 +1,4 @@
 import React from "react";
-import DividerLetter from "../../utils/DividerLetter";
 import "./Contact.css";
 function Contact(props) {
   const { titleContact } = props;

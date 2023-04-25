@@ -1,7 +1,6 @@
 #about {
   display: flex;
   flex-direction: column;
-  /* flex direction sin,  */
   align-items: center;
   justify-content: flex-start;
   background-color: #f3f3f3;
@@ -16,12 +15,9 @@
   line-height: 0px;
   margin-top: 5vh;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 #sign-road {
-  /* media
-  margin-left: 12vw; 
-  margin-top: 5vh;*/
   width: fit-content;
   z-index: 1;
   display: flex;
@@ -36,6 +32,7 @@
   color: aliceblue;
 }
 #skill-border {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   padding: 1vh;
@@ -46,27 +43,24 @@
 }
 #skill-set {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  min-width: none;
   gap: 2.5vh;
   padding: 2vh;
   background-color: #08843c;
   border: 0.01vw solid black;
   border-radius: 3vh;
+  transition: all 0.25s;
 }
 #wood-container {
-  min-width: 200px;
+  width: 20vw;
+  padding-inline: 50px;
   display: flex;
   justify-content: space-between;
-  /*
-  border-bottom: outset 0.65vh rgb(34, 27, 27); */
 }
 .wood-base {
-  /*
-  height: 11vh;
-  width: 3vw; */
   opacity: 0;
   background-color: #a46532;
   border: 0.15vw solid black;
@@ -75,26 +69,20 @@
   border-bottom: 0px;
 }
 #about-me {
-  /*
-  margin-top: 30vh;
-  margin-left: 10vw;
-*/
   margin-top: 5vh;
   margin-right: 2vw;
   align-self: flex-end;
   z-index: 1;
-  /*
-  height: 50vh;
-  width: 25vw; */
-  height: 200px;
-  width: 250px;
+  max-width: 300px;
+
   border: 0.45vh solid black;
   border-right: 1.5vh solid black;
   background-color: #e7e7e7;
   margin-bottom: 5vh;
 }
 #about-me p {
-  padding: 1vh;
+  padding-inline: 4vh;
+  text-align: center;
   font-size: 1rem;
 }
 #tab-window {
@@ -103,7 +91,7 @@
   justify-content: space-between;
   background-color: rgb(143, 143, 143);
   border-bottom: 0.25vh solid black;
-  width: 250px;
+
   height: 6vh;
 }
 .tab-text {
@@ -117,4 +105,43 @@
 
 .close :hover {
   fill: red;
+}
+@media only screen and (min-width: 600px) {
+  #skill-set {
+    min-width: 450px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  #about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #sign-road {
+    align-self: flex-start;
+    margin-left: 12vw;
+  }
+  #wood-container {
+    border-bottom: outset 0.65vh rgb(34, 27, 27);
+  }
+  .wood-base {
+    height: 11vh;
+    width: 3vw;
+    opacity: 1;
+  }
+  #skill-set {
+    width: 40vw;
+    height: 35vh;
+  }
+  #about-me {
+    margin-top: 45vh;
+    margin-left: 10vw;
+  }
+}
+@media only screen and (min-width: 850px) {
+  #about-me {
+    margin-right: 5vw;
+  }
+  #about-me p {
+    font-size: 1.25rem;
+  }
 }
