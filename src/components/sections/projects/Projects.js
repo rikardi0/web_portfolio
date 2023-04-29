@@ -4,14 +4,14 @@ import ListProjects from "../../ui/GridElement";
 import DividerLetter from "../../ui/DividerLetter";
 
 export default function Projects(props) {
-  let { title } = props;
+  let { title, projectList } = props;
   return (
     <section className="section" data-label="Projects" id="projects">
       <div id="project-title">
         <DividerLetter word={title} />
       </div>
       <section id="projects-container">
-        <ListProjects />
+        <ListProjects projectList={projectList} />
       </section>
     </section>
   );

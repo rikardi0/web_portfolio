@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Slide } from "react-slideshow-image";
 
+import content from "../sections/res/strings/list";
 import CloseTab from "../sections/res/svg/CloseTab";
 import "./Modal.css";
 
