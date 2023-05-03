@@ -1,0 +1,136 @@
+.star {
+  animation: pulse 1s infinite;
+  transform-origin: center;
+  padding-inline: 1.5vw;
+}
+
+.star-right {
+  animation: pulse 0.75s infinite;
+  transform-origin: center;
+  rotate: -90deg;
+}
+.star-container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+.star-cosa {
+  animation: pulse 0.75s infinite;
+}
+#star-center {
+  margin-top: 6vh;
+  margin-left: -1vw;
+}
+#star-left {
+  margin-top: 1vh;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.97);
+    opacity: 0.97;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* DIVIDER */
+.custom-shape-divider-top-1679633889 {
+  position: absolute;
+
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1679633889 svg {
+  position: relative;
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 30vh;
+}
+
+/* IMAGE HERO */
+#border {
+  display: flex;
+  min-height: 150px;
+  min-width: 75px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.phone-border {
+  min-height: 150px;
+  min-width: 75px;
+  margin-bottom: 5px;
+  border-radius: 1vw;
+  background-color: black;
+}
+
+.screen {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1vw;
+  background-color: rgb(255, 255, 255);
+  border: 0.35vh solid #000000;
+}
+.screen:hover {
+  background-color: aqua;
+}
+/* LEFT SECTION  */
+
+#details-left {
+  height: 1vh;
+  width: 5vw;
+  margin-top: 5px;
+  margin-inline: 25px;
+  border-top: 1vh dotted black;
+}
+
+#details-center {
+  height: 1vh;
+  width: 1vh;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+}
+/* RIGHT SECTION */
+
+#details-right {
+  margin-inline: auto;
+  margin-top: 1px;
+  height: 1.25vh;
+  width: 5vw;
+  border-bottom-right-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  background-color: rgb(0, 0, 0);
+}
+/* MEDIA QUERIES */
+
+.telephone {
+  height: 20vh;
+  transition: all 0.1s;
+}
+
+.telephone:hover {
+  animation: phone-vibrate 0.1s linear infinite alternate;
+}
+@keyframes phone-vibrate {
+  0% {
+    rotate: -0.5deg;
+  }
+  100% {
+    rotate: 0.75deg;
+  }
+}
+/* CV */
+#svg-cv {
+  margin-top: 0px;
+  user-select: none;
+}

@@ -27,25 +27,25 @@
 
 .project-container {
   width: 300px;
-  filter: blur(0.85px);
+
   height: 250px;
   background-color: rgb(255, 255, 255);
   border: 0.2vw solid black;
   transition: 0.25s all;
 }
 
-.project-container:hover {
-  filter: blur(0px);
-  border-radius: 0.5vw;
-  width: 460px;
-  height: 390px;
-}
 @media only screen and (min-width: 700px) {
   #projects-container {
-    display: grid;
     column-gap: 5vw;
     row-gap: 3.5vw;
     grid-template-columns: 1fr 1fr;
+
+    display: grid;
+  }
+  .project-container:hover {
+    filter: brightness(1) contrast(1) blur(0px);
+    border-radius: 0.5vw;
+    transform: scale(0.95);
   }
 }
 @media only screen and (min-width: 900px) {
