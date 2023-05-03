@@ -10,25 +10,81 @@
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
 }
-#skill-set h2 {
-  text-transform: uppercase;
-  line-height: 0px;
-  margin-top: 5vh;
-  color: white;
-  font-size: 2.5rem;
-}
-#sign-road {
-  width: fit-content;
-  z-index: 1;
+#skill-set {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2.5vh;
+  padding: 2vh;
+  background-color: #08843c;
+  border: 0.01vw solid black;
+  border-radius: 3vh;
+  transition: all 0.25s;
+}
+#skill-set h2 {
   user-select: none;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 0px;
+  margin-top: 5vh;
+  margin-bottom: 35px;
+  color: white;
+  font-weight: 500;
+}
+#download-cv {
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: #f5f3f3;
+  border-radius: 0.5vw;
+  border: solid 3.5px black;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  letter-spacing: 0px;
+  padding-inline: 2vw;
+  padding-block: 0.2vh;
+  margin-bottom: 1.5vh;
+}
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(237, 240, 86);
+  transform: translateX(-100%);
+  transition: all 1s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: translateX(0);
 }
 .skill-list {
-  user-select: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 4px solid rgb(255, 255, 255);
   font-size: 2rem;
+  padding-inline-start: 0px;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: aliceblue;
 }
 #skill-border {
@@ -41,19 +97,15 @@
   border: 0.45vh solid black;
   border-right: 1.5vh solid black;
 }
-#skill-set {
+#sign-road {
+  width: fit-content;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  min-width: none;
-  gap: 2.5vh;
-  padding: 2vh;
-  background-color: #08843c;
-  border: 0.01vw solid black;
-  border-radius: 3vh;
-  transition: all 0.25s;
+  justify-content: center;
 }
+
 #wood-container {
   width: 20vw;
   padding-inline: 50px;
@@ -74,7 +126,6 @@
   align-self: flex-end;
   z-index: 1;
   max-width: 300px;
-
   border: 0.45vh solid black;
   border-right: 1.5vh solid black;
   background-color: #e7e7e7;
@@ -109,6 +160,9 @@
 @media only screen and (min-width: 600px) {
   #skill-set {
     min-width: 450px;
+    font-size: 3.25rem;
+    font-weight: 400;
+    letter-spacing: 10px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -120,9 +174,7 @@
     align-self: flex-start;
     margin-left: 12vw;
   }
-  #wood-container {
-    border-bottom: outset 0.65vh rgb(34, 27, 27);
-  }
+
   .wood-base {
     height: 11vh;
     width: 3vw;
@@ -130,7 +182,16 @@
   }
   #skill-set {
     width: 40vw;
-    height: 35vh;
+    letter-spacing: 20px;
+  }
+  #skill-set h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .skill-list {
+    font-size: 3.15rem;
+    font-weight: 400;
+    letter-spacing: 10px;
   }
   #about-me {
     margin-top: 25vh;

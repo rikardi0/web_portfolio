@@ -36,6 +36,7 @@ export default function Body() {
       <About
         aboutContent={contentBody.about}
         aboutTitle={contentBody.aboutTitle}
+        download={contentBody.download}
         skill={contentBody.skill}
         skillTitle={contentBody.skillTitle}
       />

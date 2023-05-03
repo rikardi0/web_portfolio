@@ -1,12 +1,13 @@
 import React from "react";
-import Divider from "../res/images/svg/Divider";
-import CloseTab from "../res/images/svg/CloseTab.js";
-import MinimizeTab from "../res/images/svg/Minimize.js";
+import Divider from "../res/svg/Divider";
+import CloseTab from "../res/svg/CloseTab.js";
+import MinimizeTab from "../res/svg/Minimize.js";
+import CvImage from "../res/svg/Cv";
 import "./About.css";
 
 export default function AboutMe(props) {
-  let { aboutContent, aboutTitle, skillTitle } = props;
-  const skillList = props.skill;
+  let { aboutContent, aboutTitle, skillTitle, skill, download } = props;
+  const skillList = skill;
   const listItems = skillList.map((myList) => {
     return <li>{myList}</li>;
   });
@@ -18,7 +19,16 @@ export default function AboutMe(props) {
         <div id="skill-border">
           <section id="skill-set">
             <h2>{skillTitle}</h2>
-            <ul className="skill-list"> {listItems} </ul>,
+            <ul className="skill-list"> {listItems} </ul>
+            <a
+              class="btn"
+              id="download-cv"
+              href={require("../res/file/CV.pdf")}
+              download="Ricardo Hurtado CV"
+            >
+              <span>{download}</span>
+              <CvImage />
+            </a>
           </section>
         </div>
         <section id="wood-container">
