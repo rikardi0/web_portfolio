@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Slide } from "react-slideshow-image";
+import Jump from "react-reveal/Jump";
 
-import content from "../sections/res/strings/list";
 import CloseTab from "../sections/res/svg/CloseTab";
 import "./Modal.css";
 
@@ -47,18 +47,20 @@ function GridElement(props) {
 
   return (
     <>
-      <div
-        onClick={toggleModal}
-        style={{ backgroundColor: color }}
-        className="project-border"
-      >
-        <section
-          style={{
-            backgroundImage: `url(${path_img})`,
-          }}
-          className="project-container"
-        ></section>
-      </div>
+      <Jump>
+        <div
+          onClick={toggleModal}
+          style={{ backgroundColor: color }}
+          className="project-border"
+        >
+          <section
+            style={{
+              backgroundImage: `url(${path_img})`,
+            }}
+            className="project-container"
+          ></section>
+        </div>
+      </Jump>
 
       {modal && (
         <div className="modal">

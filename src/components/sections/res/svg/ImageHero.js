@@ -1,9 +1,9 @@
 import React from "react";
-
+import Slide from "react-reveal/Slide";
 import "./Svg.css";
 
 const ImageHero = (props) => {
-  const { size, type, deg } = props;
+  const { size, type, deg, left, right, top, duration } = props;
 
   let height = size;
   let heightScreen = size - 10;
@@ -11,29 +11,31 @@ const ImageHero = (props) => {
   let widthScreen = width - 10;
   let detailName = ["details-left", "details-center", "details-right"];
   return (
-    <div
-      id="border"
-      className="phone-border"
-      style={{
-        height: height,
-        minHeight: height,
-        width: width,
-
-        transform: `rotate(${deg}deg)`,
-      }}
-    >
+    <Slide duration={duration} left={left} top={top} right={right}>
       <div
-        id="screen"
-        className="screen"
+        id="border"
+        className="phone-border"
         style={{
-          height: heightScreen,
-          maxHeight: heightScreen,
-          width: widthScreen,
+          height: height,
+          minHeight: height,
+          width: width,
+
+          transform: `rotate(${deg}deg)`,
         }}
       >
-        <div id={detailName[type]}></div>
+        <div
+          id="screen"
+          className="screen"
+          style={{
+            height: heightScreen,
+            maxHeight: heightScreen,
+            width: widthScreen,
+          }}
+        >
+          <div id={detailName[type]}></div>
+        </div>
       </div>
-    </div>
+    </Slide>
   );
 };
 export default ImageHero;
