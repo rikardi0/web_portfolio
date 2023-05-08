@@ -11,31 +11,29 @@ const ImageHero = (props) => {
   let widthScreen = width - 10;
   let detailName = ["details-left", "details-center", "details-right"];
   return (
-    <Slide duration={duration} left={left} top={top} right={right}>
-      <div
-        id="border"
-        className="phone-border"
-        style={{
-          height: height,
-          minHeight: height,
-          width: width,
+    <div
+      id="border"
+      className="phone-border"
+      style={{
+        height: height,
+        minHeight: height,
+        width: width,
 
-          transform: `rotate(${deg}deg)`,
+        transform: `rotate(${deg}deg)`,
+      }}
+    >
+      <div
+        id="screen"
+        className="screen"
+        style={{
+          height: heightScreen,
+          maxHeight: heightScreen,
+          width: widthScreen,
         }}
       >
-        <div
-          id="screen"
-          className="screen"
-          style={{
-            height: heightScreen,
-            maxHeight: heightScreen,
-            width: widthScreen,
-          }}
-        >
-          <div id={detailName[type]}></div>
-        </div>
+        <div id={detailName[type]}></div>
       </div>
-    </Slide>
+    </div>
   );
 };
 export default ImageHero;
