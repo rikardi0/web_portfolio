@@ -2,6 +2,7 @@
   animation: pulse 1s infinite;
   transform-origin: center;
   padding-inline: 1.5vw;
+  padding-block: 2vh;
 }
 
 .star-right {
@@ -111,16 +112,12 @@
   border-bottom-left-radius: 1vw;
   background-color: rgb(0, 0, 0);
 }
-/* MEDIA QUERIES */
 
 .telephone {
-  height: 20vh;
-  transition: all 0.1s;
+  margin-top: 10px;
+  animation: phone-vibrate 0.5s linear infinite alternate;
 }
 
-.telephone:hover {
-  animation: phone-vibrate 0.1s linear infinite alternate;
-}
 @keyframes phone-vibrate {
   0% {
     rotate: -0.5deg;
@@ -132,5 +129,11 @@
 /* CV */
 #svg-cv {
   margin-top: 0px;
+  height: 40px;
   user-select: none;
+}
+@media only screen and (min-width: 900px) {
+  .star {
+    padding-inline: 1.5vw;
+  }
 }

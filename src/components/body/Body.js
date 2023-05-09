@@ -3,7 +3,7 @@ import Home from "../sections/home/Home";
 import About from "../sections/about/About";
 import Projects from "../sections/projects/Projects";
 import Contact from "../sections/contact/Contact";
-
+import Bounce from "react-reveal/Bounce";
 import list from "../sections/res/strings/list";
 import strings from "../sections/res/strings/strings";
 import NavBar from "../ui/NavBar";
@@ -24,13 +24,11 @@ export default function Body() {
     <>
       <Home description={contentBody.description} />
       <nav id="language">
-        <label class="switch">
-          <input
-            onChange={() => setLanguage(!language)}
-            type="checkbox"
-          ></input>
-          <span class="slider"></span>
-        </label>
+        <input
+          onChange={() => setLanguage(!language)}
+          type="checkbox"
+          class="plus-minus"
+        ></input>
       </nav>
       <div id="spacer"></div>
       <About

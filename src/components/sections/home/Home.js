@@ -5,7 +5,6 @@ import DividerLetter from "../../ui/DividerLetter";
 import "./Home.css";
 const Home = (props) => {
   const { description } = props;
-  // eslint-disable-next-line no-unused-vars
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -23,18 +22,14 @@ const Home = (props) => {
         <Decoration size={40} />
         <span className="description">{description}</span>
       </section>
-      {window.innerWidth < 700 ? (
-        <div id="hero">
-          <ImageHero size={160} type={"1"} deg={2} />
-          <ImageHero size={175} type={"2"} deg={0} />
-          <ImageHero size={155} type={"3"} deg={-1} />
-        </div>
+      {window.innerWidth < 900 ? (
+        <div id="hero"></div>
       ) : (
         <div id="hero">
-          <ImageHero size={310} type={"0"} deg={0} />
-          <ImageHero size={290} type={"2"} deg={0} />
-          <ImageHero size={350} type={"1"} deg={0} />
-          <ImageHero size={325} type={""} deg={-5} />
+          <ImageHero size={320} type={"0"} deg={0} />
+          <ImageHero size={300} type={"2"} deg={0} />
+          <ImageHero size={360} type={"1"} deg={0} />
+          <ImageHero size={335} type={""} deg={-5} />
         </div>
       )}
     </section>

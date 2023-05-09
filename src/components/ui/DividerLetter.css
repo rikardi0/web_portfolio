@@ -5,7 +5,7 @@
 .letter {
   color: rgb(27, 27, 27);
   line-height: 50px;
-  font-size: 8em;
+  font-size: 6.25em;
   font-family: "BROKAT v1.0";
   font-weight: 700;
   cursor: pointer;
@@ -22,8 +22,13 @@
   transform: rotateY(180deg);
   color: rgb(36, 1, 1);
 }
+@media only screen and (min-width: 750px) {
+  .letter {
+    font-size: 9.5em;
+  }
+}
 @media only screen and (min-width: 1050px) {
   .letter {
-    font-size: 11em;
+    font-size: 12em;
   }
 }

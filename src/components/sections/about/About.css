@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   gap: 2.5vh;
-  padding: 2vh;
+  padding: 0px;
   background-color: #08843c;
   border: 0.01vw solid black;
   border-radius: 3vh;
@@ -33,19 +33,21 @@
   font-weight: 500;
 }
 #download-cv {
+  margin-inline: 5vw;
   color: black;
-  font-size: 3rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   background-color: #f5f3f3;
-  border-radius: 0.5vw;
-  border: solid 3.5px black;
+  border-radius: 7px;
+  border: solid 2.5px black;
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
   letter-spacing: 0px;
-  padding-inline: 2vw;
-  padding-block: 0.2vh;
-  margin-bottom: 1.5vh;
+  padding-inline: 10px;
+  padding-block: 0.75vh;
+  margin-top: 0.5vh;
+  margin-bottom: 4.5vh;
 }
 .btn {
   display: inline-block;
@@ -83,7 +85,7 @@
   padding-inline-start: 0px;
   text-transform: uppercase;
   list-style-type: none;
-  margin-top: 0px;
+  margin-top: -10px;
   margin-bottom: 0px;
   color: aliceblue;
 }
@@ -94,7 +96,7 @@
   padding: 1vh;
   background-color: rgb(255, 255, 255);
   border-radius: 4vh;
-  border: 0.45vh solid black;
+  border: 0.25vh solid black;
   border-right: 1.5vh solid black;
 }
 #sign-road {
@@ -118,21 +120,20 @@
   border: 0.15vw solid black;
   border-right: 1vw solid black;
   border-top: 0px;
-  border-bottom: 0px;
 }
 #about-me {
   margin-top: 5vh;
-  margin-right: 2vw;
-  align-self: flex-end;
+  margin-left: 10vw;
   z-index: 1;
-  max-width: 300px;
-  border: 0.45vh solid black;
-  border-right: 1.5vh solid black;
+  max-width: 250px;
+  border: 0.15vh solid black;
+  border-right: 1vh solid black;
   background-color: #e7e7e7;
   margin-bottom: 5vh;
 }
 #about-me p {
   padding-inline: 4vh;
+  line-height: 4.75vh;
   text-align: center;
   font-size: 1rem;
 }
@@ -164,6 +165,19 @@
     font-weight: 400;
     letter-spacing: 10px;
   }
+  #download-cv {
+    font-size: 1.85rem;
+    padding-inline: 1.25vw;
+    gap: 40px;
+    letter-spacing: 0px;
+    border-radius: 0.5vw;
+  }
+  #about-me {
+    max-width: 350px;
+  }
+  #about-me p {
+    line-height: 4vh;
+  }
 }
 @media only screen and (min-width: 1100px) {
   #about {
@@ -189,7 +203,7 @@
     font-weight: 700;
   }
   .skill-list {
-    font-size: 3.15rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: 10px;
   }

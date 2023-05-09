@@ -25,7 +25,7 @@ const strings = {
       aboutTitle: "Sobre-Mi",
       projectsTitle: "Proyectos",
       skillTitle: "habilidad",
-      contact: "Hagamos Eqiupo!",
+      contact: "Hagamos Equipo!",
       download: "Descargar CV",
       about:
         "Soy un ingeniero mecánico de 23 años apasionado por el desarrollo web y de aplicaciones. Me especializo en flutter y java, y mi competencia en diseño me diferencia. ¡Trabajemos juntos para cumplir su visión!",
