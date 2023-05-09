@@ -19,8 +19,8 @@
   height: 100%;
   display: block;
   background-color: aliceblue;
-  animation: spinner-b4c8mmhg 0.5s backwards,
-    spinner-49opz7hg 1.25s 0.5s infinite ease;
+  animation: spinner-b4c8mmhg 0.25s backwards,
+    spinner-49opz7hg 1.4s 0.75s infinite ease;
   border: 2.5px solid #000000;
   border-radius: 50%;
   box-shadow: 0 -52.8px 0 -8.8px #000000;
@@ -28,7 +28,7 @@
 }
 
 .spinner::after {
-  animation-delay: 0s, 1.25s;
+  animation-delay: 0s, 1.75s;
 }
 
 @keyframes spinner-b4c8mmhg {

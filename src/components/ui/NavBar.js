@@ -39,13 +39,14 @@ export default function activateNavigation() {
         navLink.classList.remove("nav-link-selected");
       });
 
-      const visibleSection = entries.filter((entry) => entry.isIntersecting)[0];
-
-      document
-        .querySelector(
-          `.nav-item[data-for-section="${visibleSection.target.id}"] .nav-link`
-        )
-        .classList.add("nav-link-selected");
+      const visibleSection = entries.find((entry) => entry.isIntersecting);
+      if (visibleSection) {
+        document
+          .querySelector(
+            `.nav-item[data-for-section="${visibleSection.target.id}"] .nav-link`
+          )
+          .classList.add("nav-link-selected");
+      }
     },
     { threshold: 0.65 }
   );
