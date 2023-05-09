@@ -27,7 +27,9 @@ export default function AboutMe(props) {
               <a
                 class="btn"
                 id="download-cv"
-                href={require("../res/file/CV.pdf")}
+                href={
+                  "https://drive.google.com/uc?export=download&id=1lyPVOMjqT2pYDHGjIjDjTWVpNY7hFHzU"
+                }
                 download="Ricardo Hurtado CV"
               >
                 <span>{download}</span>

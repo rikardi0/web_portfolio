@@ -1,9 +1,8 @@
 import React from "react";
-import Slide from "react-reveal/Slide";
 import "./Svg.css";
 
 const ImageHero = (props) => {
-  const { size, type, deg, left, right, top, duration } = props;
+  const { size, type, deg } = props;
 
   let height = size;
   let heightScreen = size - 10;
