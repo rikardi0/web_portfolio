@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.35305aa6.css",
-    "main.js": "/web_portfolio/static/js/main.3ec684e8.js",
+    "main.css": "/web_portfolio/static/css/main.2a200f2e.css",
+    "main.js": "/web_portfolio/static/js/main.d6dcaba3.js",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
@@ -10,11 +10,11 @@
     "static/media/BROKATv10-Regular.woff2": "/web_portfolio/static/media/BROKATv10-Regular.54b9730ff774703d8055.woff2",
     "static/media/close.svg": "/web_portfolio/static/media/close.a9fbd98df81c21124157.svg",
     "index.html": "/web_portfolio/index.html",
-    "main.35305aa6.css.map": "/web_portfolio/static/css/main.35305aa6.css.map",
-    "main.3ec684e8.js.map": "/web_portfolio/static/js/main.3ec684e8.js.map"
+    "main.2a200f2e.css.map": "/web_portfolio/static/css/main.2a200f2e.css.map",
+    "main.d6dcaba3.js.map": "/web_portfolio/static/js/main.d6dcaba3.js.map"
   },
   "entrypoints": [
-    "static/css/main.35305aa6.css",
-    "static/js/main.3ec684e8.js"
+    "static/css/main.2a200f2e.css",
+    "static/js/main.d6dcaba3.js"
   ]
 }
