@@ -102,7 +102,11 @@ a {
 
 .plus-minus {
   --duration: 0.5s;
+<<<<<<< HEAD
   --size: 30px;
+=======
+  --size: 35px;
+>>>>>>> d6a84e5e201d58ac70dc3c26dbb629d7b5eb29eb
   -webkit-appearance: none;
   cursor: pointer;
   display: flex;

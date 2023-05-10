@@ -5,7 +5,11 @@
 .letter {
   color: rgb(27, 27, 27);
   line-height: 50px;
+<<<<<<< HEAD
   font-size: 6.15em;
+=======
+  font-size: 6.25em;
+>>>>>>> d6a84e5e201d58ac70dc3c26dbb629d7b5eb29eb
   font-family: "BROKAT v1.0";
   font-weight: 700;
   cursor: pointer;

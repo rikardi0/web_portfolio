@@ -41,7 +41,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+<<<<<<< HEAD
   height: 30vh;
+=======
+  height: 25vh;
+>>>>>>> d6a84e5e201d58ac70dc3c26dbb629d7b5eb29eb
   width: 80vw;
   background-color: #b82515;
   opacity: 1;
@@ -82,9 +86,13 @@
     margin-left: 10vw;
     align-self: flex-start;
   }
+<<<<<<< HEAD
   #hero {
     height: 45vh;
   }
+=======
+
+>>>>>>> d6a84e5e201d58ac70dc3c26dbb629d7b5eb29eb
   #decoration-description {
     margin-left: 9vw;
     width: 70vw;

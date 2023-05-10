@@ -22,6 +22,7 @@ const Home = (props) => {
         <Decoration size={40} />
         <span className="description">{description}</span>
       </section>
+<<<<<<< HEAD
       {window.innerWidth < 425 ? (
         <div id="hero">
           <ImageHero size={152} type={"0"} deg={0} />
@@ -52,6 +53,16 @@ const Home = (props) => {
           <ImageHero size={300} type={"2"} deg={0} />
           <ImageHero size={310} type={"1"} deg={0} />
           <ImageHero size={285} type={""} deg={-5} />
+=======
+      {window.innerWidth < 900 ? (
+        <div id="hero"></div>
+      ) : (
+        <div id="hero">
+          <ImageHero size={320} type={"0"} deg={0} />
+          <ImageHero size={300} type={"2"} deg={0} />
+          <ImageHero size={360} type={"1"} deg={0} />
+          <ImageHero size={335} type={""} deg={-5} />
+>>>>>>> d6a84e5e201d58ac70dc3c26dbb629d7b5eb29eb
         </div>
       )}
     </section>

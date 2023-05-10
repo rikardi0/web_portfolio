@@ -48,9 +48,12 @@
   .project-border {
     padding: 18px;
   }
+<<<<<<< HEAD
   #project-title {
     margin-bottom: 10vh;
   }
+=======
+>>>>>>> d6a84e5e201d58ac70dc3c26dbb629d7b5eb29eb
 }
 @media only screen and (min-width: 900px) {
   .project-border {
