@@ -53,12 +53,7 @@ function GridElement(props) {
           style={{ backgroundColor: color }}
           className="project-border"
         >
-          <section
-            style={{
-              backgroundImage: `url(${path_img})`,
-            }}
-            className="project-container"
-          ></section>
+          {path_img}
         </div>
       </Jump>
 

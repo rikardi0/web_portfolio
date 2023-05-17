@@ -17,21 +17,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 150px;
   padding: 1px;
   background-color: brown;
   border-radius: 0.5vw;
   border: 0.2vw solid black;
-}
-
-.project-container {
-  width: 200px;
-
-  height: 200px;
-  background-color: rgb(255, 255, 255);
-  border: 0.2vw solid black;
-  transition: 0.25s all;
 }
 
 @media only screen and (min-width: 700px) {
@@ -41,12 +32,11 @@
     grid-template-columns: 1fr 1fr;
     display: grid;
   }
-  .project-container:hover {
-    border-radius: 0.5vw;
-    transform: scale(0.95);
-  }
+
   .project-border {
-    padding: 18px;
+    padding: 10px;
+    width: 35vw;
+    height: 20vw;
   }
   #project-title {
     margin-bottom: 10vh;
@@ -55,10 +45,6 @@
 @media only screen and (min-width: 900px) {
   .project-border {
     width: 35vw;
-    height: 30vw;
-  }
-  .project-container {
-    width: 35vw;
-    height: 30vw;
+    height: 20vw;
   }
 }

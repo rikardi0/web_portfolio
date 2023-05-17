@@ -137,3 +137,24 @@
     padding-inline: 1.5vw;
   }
 }
+
+.svg-projects:hover {
+  scale: 0.98;
+  transition: 0.25s all;
+}
+.svg-projects {
+  width: 235px;
+  height: 135px;
+}
+@media only screen and (min-width: 700px) {
+  .svg-projects {
+    width: 35vw;
+    height: 20vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .svg-projects {
+    width: 35vw;
+    height: 20vw;
+  }
+}
