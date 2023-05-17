@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web_portfolio/static/css/main.9cae3e9c.css",
-    "main.js": "/web_portfolio/static/js/main.f7ceaf17.js",
+    "main.js": "/web_portfolio/static/js/main.0e36746e.js",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
@@ -10,10 +10,10 @@
     "static/media/BROKATv10-Regular.woff2": "/web_portfolio/static/media/BROKATv10-Regular.54b9730ff774703d8055.woff2",
     "index.html": "/web_portfolio/index.html",
     "main.9cae3e9c.css.map": "/web_portfolio/static/css/main.9cae3e9c.css.map",
-    "main.f7ceaf17.js.map": "/web_portfolio/static/js/main.f7ceaf17.js.map"
+    "main.0e36746e.js.map": "/web_portfolio/static/js/main.0e36746e.js.map"
   },
   "entrypoints": [
     "static/css/main.9cae3e9c.css",
-    "static/js/main.f7ceaf17.js"
+    "static/js/main.0e36746e.js"
   ]
 }
