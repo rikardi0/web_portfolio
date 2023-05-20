@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.8a152953.css",
-    "main.js": "/web_portfolio/static/js/main.dac4c330.js",
+    "main.css": "/web_portfolio/static/css/main.d09dc056.css",
+    "main.js": "/web_portfolio/static/js/main.673ba6fc.js",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
@@ -17,11 +17,11 @@
     "static/media/trabajo_permisos.png": "/web_portfolio/static/media/trabajo_permisos.a35ded3eb79ba1fe69b8.png",
     "static/media/PF-2.png": "/web_portfolio/static/media/PF-2.b92728675f8d9e3703cd.png",
     "index.html": "/web_portfolio/index.html",
-    "main.8a152953.css.map": "/web_portfolio/static/css/main.8a152953.css.map",
-    "main.dac4c330.js.map": "/web_portfolio/static/js/main.dac4c330.js.map"
+    "main.d09dc056.css.map": "/web_portfolio/static/css/main.d09dc056.css.map",
+    "main.673ba6fc.js.map": "/web_portfolio/static/js/main.673ba6fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a152953.css",
-    "static/js/main.dac4c330.js"
+    "static/css/main.d09dc056.css",
+    "static/js/main.673ba6fc.js"
   ]
 }
