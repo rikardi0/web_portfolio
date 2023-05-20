@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.1dd96429.css",
+    "main.css": "/web_portfolio/static/css/main.251b69ac.css",
     "main.js": "/web_portfolio/static/js/main.221f5f62.js",
     "static/media/TP-1.png": "/web_portfolio/static/media/TP-1.400a538eba72831b90c9.png",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
@@ -17,11 +17,11 @@
     "static/media/BROKATv10-Regular.woff": "/web_portfolio/static/media/BROKATv10-Regular.4032ae16ae47bba7d5e3.woff",
     "static/media/BROKATv10-Regular.woff2": "/web_portfolio/static/media/BROKATv10-Regular.54b9730ff774703d8055.woff2",
     "index.html": "/web_portfolio/index.html",
-    "main.1dd96429.css.map": "/web_portfolio/static/css/main.1dd96429.css.map",
+    "main.251b69ac.css.map": "/web_portfolio/static/css/main.251b69ac.css.map",
     "main.221f5f62.js.map": "/web_portfolio/static/js/main.221f5f62.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dd96429.css",
+    "static/css/main.251b69ac.css",
     "static/js/main.221f5f62.js"
   ]
 }
