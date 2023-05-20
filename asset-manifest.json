@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.251b69ac.css",
-    "main.js": "/web_portfolio/static/js/main.221f5f62.js",
-    "static/media/TP-1.png": "/web_portfolio/static/media/TP-1.400a538eba72831b90c9.png",
+    "main.css": "/web_portfolio/static/css/main.8a152953.css",
+    "main.js": "/web_portfolio/static/js/main.dac4c330.js",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
-    "static/media/PF-1.png": "/web_portfolio/static/media/PF-1.006b079741a6adaa17f9.png",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
-    "static/media/TP-2.png": "/web_portfolio/static/media/TP-2.f26f5ffa6511556c0004.png",
     "static/media/Throwup-Fill.woff2": "/web_portfolio/static/media/Throwup-Fill.7e134ff0cdd7e9a3c89d.woff2",
-    "static/media/PF-3.png": "/web_portfolio/static/media/PF-3.ca7ea2ca2eb25ecbbf62.png",
-    "static/media/PF-2.png": "/web_portfolio/static/media/PF-2.6cb678c90d060f3dcb4b.png",
-    "static/media/pump_perfect.png": "/web_portfolio/static/media/pump_perfect.8157cbe1d84b6fefa78a.png",
-    "static/media/TP-3.png": "/web_portfolio/static/media/TP-3.0068269679cd1120e9b2.png",
-    "static/media/trabajo_permisos.png": "/web_portfolio/static/media/trabajo_permisos.24fde835d93dff6491b3.png",
+    "static/media/TP-1.png": "/web_portfolio/static/media/TP-1.831d360e6b09c9d82a12.png",
+    "static/media/PF-1.png": "/web_portfolio/static/media/PF-1.28dfc7bc9dd980b1b9ed.png",
+    "static/media/TP-2.png": "/web_portfolio/static/media/TP-2.aab4ad1bab14a893aa56.png",
     "static/media/BROKATv10-Regular.woff": "/web_portfolio/static/media/BROKATv10-Regular.4032ae16ae47bba7d5e3.woff",
+    "static/media/PF-3.png": "/web_portfolio/static/media/PF-3.f4a3039a12e7dac7e74c.png",
+    "static/media/TP-3.png": "/web_portfolio/static/media/TP-3.75e16d94c8de492a97ca.png",
     "static/media/BROKATv10-Regular.woff2": "/web_portfolio/static/media/BROKATv10-Regular.54b9730ff774703d8055.woff2",
+    "static/media/pump_perfect.png": "/web_portfolio/static/media/pump_perfect.c7a594e10830ac0277bf.png",
+    "static/media/trabajo_permisos.png": "/web_portfolio/static/media/trabajo_permisos.a35ded3eb79ba1fe69b8.png",
+    "static/media/PF-2.png": "/web_portfolio/static/media/PF-2.b92728675f8d9e3703cd.png",
     "index.html": "/web_portfolio/index.html",
-    "main.251b69ac.css.map": "/web_portfolio/static/css/main.251b69ac.css.map",
-    "main.221f5f62.js.map": "/web_portfolio/static/js/main.221f5f62.js.map"
+    "main.8a152953.css.map": "/web_portfolio/static/css/main.8a152953.css.map",
+    "main.dac4c330.js.map": "/web_portfolio/static/js/main.dac4c330.js.map"
   },
   "entrypoints": [
-    "static/css/main.251b69ac.css",
-    "static/js/main.221f5f62.js"
+    "static/css/main.8a152953.css",
+    "static/js/main.dac4c330.js"
   ]
 }
