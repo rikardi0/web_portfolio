@@ -69,18 +69,27 @@
   min-height: 150px;
   min-width: 75px;
   margin-bottom: 5px;
-  border-radius: 1vw;
+  border-radius: 2.75vw;
   background-color: black;
 }
 
 .screen {
   display: flex;
-
   justify-content: center;
   align-items: flex-start;
-  border-radius: 1vw;
+  border-radius: 2vw;
   background-color: rgb(255, 255, 255);
-  border: 0.35vh solid #000000;
+  border: 0.15vh solid #000000;
+}
+@media only screen and (min-width: 750px) {
+  .phone-border {
+    border-radius: 1vw;
+  }
+
+  .screen {
+    border-radius: 1vw;
+    border: 0.35vh solid #000000;
+  }
 }
 .screen:hover {
   background-color: aqua;
@@ -144,15 +153,9 @@
 }
 .svg-projects {
   width: 235px;
-  height: 135px;
+  height: 136.63px;
 }
 @media only screen and (min-width: 700px) {
-  .svg-projects {
-    width: 35vw;
-    height: 20vw;
-  }
-}
-@media only screen and (min-width: 900px) {
   .svg-projects {
     width: 35vw;
     height: 20vw;

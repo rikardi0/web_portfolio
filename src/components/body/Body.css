@@ -4,7 +4,7 @@ a {
 
 #spacer {
   background-color: rgba(7, 148, 219, 255);
-  border-top: 0.35vh solid black;
+  border-top: 0.15vh solid black;
   height: 5vh;
   align-self: center;
 }
@@ -257,5 +257,8 @@ a {
   }
   .nav-link:hover ~ .nav-label {
     opacity: 1;
+  }
+  #spacer {
+    border-top: 0.35vh solid black;
   }
 }

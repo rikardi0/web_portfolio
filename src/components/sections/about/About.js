@@ -1,16 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Zoom from "react-reveal/Zoom";
 import Slide from "react-reveal/Slide";
 import Divider from "../res/svg/Divider";
-import CloseTab from "../res/svg/CloseTab.js";
-import MinimizeTab from "../res/svg/Minimize.js";
 import CvImage from "../res/svg/Cv";
 import "./About.css";
 
 export default function AboutMe(props) {
-  let { aboutContent, aboutTitle, skillTitle, skill, download } = props;
-  const skillList = skill;
-  const listItems = skillList.map((myList) => {
+  let { aboutContent, aboutTitle, skillTitle, skill, download, callToAction } =
+    props;
+
+  const [tabStyle, setStyle] = useState(0);
+
+  const changeStyle = () => {
+    if (tabStyle > 1) {
+      setStyle(0);
+    } else {
+      setStyle(tabStyle + 1);
+    }
+    console.log(tabStyle);
+  };
+  const about = aboutContent.map((e) => {
+    const elementId = e.trim().substring(0, 3).toLowerCase();
+
+    return (
+      <p
+        id="about-description"
+        key={elementId}
+        className={
+          tabStyle === 0 ? "text-xp" : tabStyle === 1 ? "text-98" : "text-ten"
+        }
+      >
+        {e}
+      </p>
+    );
+  });
+  const listItems = skill.map((myList) => {
     return <li>{myList}</li>;
   });
   return (
@@ -44,16 +68,49 @@ export default function AboutMe(props) {
         </div>
       </Slide>
       <Zoom>
-        <section id="about-me">
-          <div id="tab-window">
-            <div>
-              <CloseTab />
-              <MinimizeTab />
-            </div>
-
-            <span className="tab-text">{aboutTitle}</span>
+        <section
+          id="about-me"
+          className={
+            tabStyle === 0
+              ? "about-me-xp"
+              : tabStyle === 1
+              ? "about-me-98"
+              : "about-me-ten"
+          }
+        >
+          <div
+            id="tab-window"
+            className={
+              tabStyle === 0
+                ? "tab-window-xp"
+                : tabStyle === 1
+                ? "tab-window-98"
+                : "tab-window-ten"
+            }
+          >
+            <span
+              id="tab-text"
+              className={
+                tabStyle === 0
+                  ? "tab-text-xp"
+                  : tabStyle === 1
+                  ? "tab-text-98"
+                  : "tab-text-ten"
+              }
+            >
+              {aboutTitle}
+            </span>
           </div>
-          <p>{aboutContent}</p>
+          {about}
+          <div
+            onClick={changeStyle}
+            id="col"
+            className={
+              tabStyle === 0 ? "col-xp" : tabStyle === 1 ? "col-98" : "col-ten"
+            }
+          >
+            {callToAction}
+          </div>
         </section>
       </Zoom>
     </section>

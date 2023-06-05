@@ -5,9 +5,9 @@ const ImageHero = (props) => {
   const { size, type, deg } = props;
 
   let height = size;
-  let heightScreen = size - 10;
+  let heightScreen = size - 5.5;
   let width = size / 2;
-  let widthScreen = width - 10;
+  let widthScreen = width - 12;
   let detailName = ["details-left", "details-center", "details-right"];
   return (
     <div

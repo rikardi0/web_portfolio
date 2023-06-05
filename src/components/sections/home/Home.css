@@ -41,7 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 30vh;
+  height: 145px;
   width: 80vw;
   background-color: #b82515;
   opacity: 1;
@@ -65,7 +65,7 @@
     linear-gradient(#000000 0.8px, transparent 0.8px) 0 -0.4px,
     linear-gradient(90deg, #000000 0.8px, #b82515 0.8px) -0.4px 0;
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
-  border: 0.35vh solid #000000;
+  border: 0.15vh solid #000000;
   border-bottom: 0 solid rgb(0, 0, 0);
 }
 
@@ -83,7 +83,9 @@
     align-self: flex-start;
   }
   #hero {
-    height: 45vh;
+    height: 150px;
+    border: 0.35vh solid #000000;
+    border-bottom: 0px;
   }
   #decoration-description {
     margin-left: 9vw;

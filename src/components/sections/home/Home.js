@@ -5,7 +5,7 @@ import DividerLetter from "../../ui/DividerLetter";
 import "./Home.css";
 const Home = (props) => {
   const { description } = props;
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
@@ -24,8 +24,8 @@ const Home = (props) => {
       </section>
       {window.innerWidth < 425 ? (
         <div id="hero">
-          <ImageHero size={152} type={"0"} deg={0} />
-          <ImageHero size={158} type={"1"} deg={-5} />
+          <ImageHero size={145} type={""} deg={0} />
+          <ImageHero size={160} type={""} deg={-5} />
         </div>
       ) : window.innerWidth < 500 ? (
         <div id="hero">
@@ -35,9 +35,10 @@ const Home = (props) => {
         </div>
       ) : window.innerWidth < 780 ? (
         <div id="hero">
-          <ImageHero size={167} type={""} deg={0} />
+          <ImageHero size={157} type={""} deg={0} />
           <ImageHero size={170} type={"1"} deg={0} />
           <ImageHero size={165} type={"2"} deg={-5} />
+          <ImageHero size={145} type={""} deg={0} />
         </div>
       ) : window.innerWidth < 1035 ? (
         <div id="hero">

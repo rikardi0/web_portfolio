@@ -3,7 +3,6 @@ import Home from "../sections/home/Home";
 import About from "../sections/about/About";
 import Projects from "../sections/projects/Projects";
 import Contact from "../sections/contact/Contact";
-import Bounce from "react-reveal/Bounce";
 import list from "../sections/res/strings/list";
 import strings from "../sections/res/strings/strings";
 import NavBar from "../ui/NavBar";
@@ -37,6 +36,7 @@ export default function Body() {
         download={contentBody.download}
         skill={contentBody.skill}
         skillTitle={contentBody.skillTitle}
+        callToAction={contentBody.call}
       />
       <div id="spacer-mid">
         <div id="spacer-mid-details"></div>

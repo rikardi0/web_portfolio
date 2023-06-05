@@ -4,6 +4,7 @@ function CloseTab() {
   return (
     <svg
       className="close"
+      fill="#FFFFFF"
       width="20px"
       height="20px"
       viewBox="0 0 512 512"
@@ -15,7 +16,7 @@ function CloseTab() {
         id="Page-1"
         stroke="none"
         stroke-width="1"
-        fill="none"
+        fill="#FFFFFF"
         fill-rule="evenodd"
       >
         <g

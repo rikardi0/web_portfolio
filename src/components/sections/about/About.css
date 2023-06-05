@@ -3,10 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #f3f3f3;
   opacity: 1;
   background-image: radial-gradient(#646363 0.75px, transparent 0.75px),
-    radial-gradient(#646363 0.75px, #f3f3f3 0.75px);
+    radial-gradient(#646363 0.75px, #cbd6e4 0.75px);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
 }
@@ -121,43 +120,169 @@
   border-right: 1vw solid black;
   border-top: 0px;
 }
+/* ABOUT ME */
 #about-me {
+  display: flex;
+  flex-direction: column;
   margin-top: 5vh;
   margin-left: 10vw;
   z-index: 1;
   max-width: 250px;
-  border: 0.15vh solid black;
-  border-right: 1vh solid black;
-  background-color: #e7e7e7;
+  transition: all 10.85s;
   margin-bottom: 5vh;
+  transition: all 0.85s;
 }
-#about-me p {
-  padding-inline: 4vh;
-  line-height: 18px;
+.about-me-xp {
+  border: 3px solid #041c46;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #e7e7e7;
+}
+.about-me-98 {
+  border: 2px solid #000000;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  background-color: #e7e7e7;
+}
+.about-me-ten {
+  background-color: #eeeeee;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-description {
+  padding-inline: 2vh;
+  line-height: 25px;
+
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+.text-xp {
+  font-weight: 400;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.text-98 {
+  font-weight: 400;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+.text-ten {
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* button call to action */
+#col {
+  cursor: pointer;
+  align-self: center;
   text-align: center;
-  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 1.75em;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
+.col-xp {
+  padding: 6px 12px;
+  background-color: #fffef6;
+  border: 1.99px dotted #03122c;
+  border-radius: 4px;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #000000;
+}
+
+.col-xp:hover {
+  background-color: #d8d8d8;
+}
+
+.col-98 {
+  padding: 6px 5px;
+  background-color: #c0c0c0;
+  border: 2px solid #000000;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-radius: 1px;
+  font-family: Verdana, Arial, sans-serif;
+  color: #000000;
+}
+.col-98:hover {
+  background-color: #e0e0e0;
+  border: 2px solid #000000;
+}
+.col-ten {
+  padding: 8px 10px;
+  background-color: #dadada;
+  border-radius: 1px;
+  border: solid rgb(145, 145, 145) 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  transition: all 0.85s;
+}
+.col-ten:hover {
+  background-color: #e6e9f3;
+  border: solid rgb(1, 132, 255) 1px;
+}
+
 #tab-window {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(143, 143, 143);
-  border-bottom: 0.25vh solid black;
-
   height: 6vh;
 }
-.tab-text {
-  padding: 2vh;
-  font-size: 1rem;
-  font-weight: bolder;
+.tab-window-xp {
+  background-color: hsla(218, 84%, 43%, 1);
+  border-bottom: 2px solid #041c46;
+  background: linear-gradient(
+    90deg,
+    hsla(218, 84%, 43%, 1) 0%,
+    hsla(218, 89%, 31%, 1) 50%,
+    hsla(218, 84%, 43%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(218, 84%, 43%, 1) 0%,
+    hsla(218, 89%, 31%, 1) 50%,
+    hsla(218, 84%, 43%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(218, 84%, 43%, 1) 0%,
+    hsla(218, 89%, 31%, 1) 50%,
+    hsla(218, 84%, 43%, 1) 100%
+  );
 }
-.minimize :hover {
-  fill: red;
+.tab-window-98 {
+  background-color: rgba(0, 0, 126, 255);
+}
+.tab-window-ten {
+  background-color: rgb(52, 51, 59);
 }
 
-.close :hover {
-  fill: red;
+#tab-text {
+  padding: 2vh;
+  font-size: 1rem;
+  transition: all 0.85s;
 }
+.tab-text-xp {
+  font-weight: bolder;
+  font-family: Tahoma, Arial, sans-serif;
+  color: white;
+}
+
+.tab-text-98 {
+  color: white;
+  font-weight: bolder;
+  font-family: Verdana, Arial, sans-serif;
+}
+.tab-text-ten {
+  color: white;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.close {
+  fill: white;
+}
+
 @media only screen and (min-width: 600px) {
   #skill-set {
     min-width: 450px;
@@ -175,8 +300,11 @@
   #about-me {
     max-width: 350px;
   }
-  #about-me p {
+  .about-description {
+    padding-block: 0vh;
+    margin-top: 6px;
     line-height: 4vh;
+    padding-inline: 2.25vh;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -208,7 +336,7 @@
     letter-spacing: 10px;
   }
   #about-me {
-    margin-top: 25vh;
+    margin-top: 35vh;
     margin-left: 10vw;
   }
 }
@@ -217,6 +345,6 @@
     margin-right: 5vw;
   }
   #about-me p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }

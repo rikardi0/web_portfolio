@@ -37,6 +37,25 @@ function GridElement(props) {
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
     setModal(!modal);
+    setSize("div-style");
+    setContainer("modal-content");
+    hideClose("close-modal");
+  };
+
+  const [imageSize, setSize] = useState("div-style");
+  const [modalContainer, setContainer] = useState("modal-content");
+  const [closeModal, hideClose] = useState("close-modal");
+
+  const handleClick = () => {
+    if (imageSize === "div-style") {
+      setSize("all-img");
+      setContainer("modal-hidden");
+      hideClose("close-hidden");
+    } else {
+      setSize("div-style");
+      setContainer("modal-content");
+      hideClose("close-modal");
+    }
   };
 
   if (modal) {
@@ -60,20 +79,20 @@ function GridElement(props) {
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
+          <div id="modal-container" className={modalContainer}>
             <h2>{title_project}</h2>
             {slideShow()}
             <p>{description}</p>
             <div>
               {technologies.map((e) => (
                 <ul>
-                  <li>
+                  <li key={e}>
                     <span>{e}</span>
                   </li>
                 </ul>
               ))}
             </div>
-            <button className="close-modal" onClick={toggleModal}>
+            <button className={closeModal} onClick={toggleModal}>
               <CloseTab />
             </button>
           </div>
@@ -86,14 +105,14 @@ function GridElement(props) {
     return (
       <Slide autoplay={false} indicators={true}>
         {slide_img.map((slideImage) => (
-          <div>
-            <div
-              className="div-style"
-              style={{
-                backgroundImage: `url(${slideImage.url})`,
-              }}
-            ></div>
-          </div>
+          <img
+            id="img-project"
+            key={slideImage}
+            className={imageSize}
+            src={slideImage.url}
+            alt={"imagen de proyectos"}
+            onClick={handleClick}
+          ></img>
         ))}
       </Slide>
     );
