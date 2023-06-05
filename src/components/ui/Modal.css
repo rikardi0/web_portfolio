@@ -19,16 +19,20 @@ body.active-modal {
 .overlay {
   background: rgba(12, 27, 36, 0.829);
 }
-.modal-content {
+#modal-container {
   z-index: 10;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  line-height: 1.4;
-  background: #ffffff;
-  padding: 14px 28px;
   border-radius: 3px;
+  transition: all 0.15s;
+}
+
+.modal-content {
+  background: #ffffff;
+  line-height: 1.4;
+  padding: 14px 28px;
   width: 70vw;
   border: solid 0.45vh black;
 }
@@ -47,6 +51,16 @@ body.active-modal {
   list-style-type: none;
 }
 
+.modal-hidden {
+  background: #ffffff00;
+  width: 100vw;
+  border: 0px;
+}
+.modal-hidden li,
+.modal-hidden p,
+.modal-hidden h2 {
+  display: none;
+}
 .close-modal {
   background-color: rgb(129, 151, 212);
   position: absolute;
@@ -60,19 +74,55 @@ body.active-modal {
 .close-modal:hover {
   padding: 7px 9px;
 }
-
-.div-style {
+.close-hidden {
+  visibility: hidden;
+}
+#img-project {
   display: flex;
+  margin: auto;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   background-size: cover;
+  transition: all 0.35s;
+}
+.div-style {
+  height: 100px;
+  width: 205px;
+}
+.all-img {
   height: 150px;
+  width: 308px;
 }
 @media only screen and (min-width: 800px) {
-  .modal-content {
-    width: 45vw;
-  }
   .div-style {
-    height: 200px;
+    height: 215px;
+    width: 441px;
+  }
+  .all-img {
+    height: 400px;
+    width: 820px;
+  }
+  .modal-content {
+    width: 35vw;
+  }
+  .modal-hidden {
+    background: #ffffff00;
+    width: 65vw;
+    border: 0px;
+  }
+  .modal-content h2 {
+    font-size: 2.25rem;
+    line-height: 0px;
+  }
+  .modal-content p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .modal-content li {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.25rem;
+    list-style-type: none;
   }
 }
