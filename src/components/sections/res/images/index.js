@@ -20,4 +20,19 @@ export default {
     tryRequire("./pump_perfect.png") || require("./questionMark.png"),
   trabajo_permiso:
     tryRequire("./trabajo_permisos.png") || require("./questionMark.png"),
+
+  hero_pump: tryRequire("./pump-hero.svg") || require("./questionMark.png"),
+  hero_permisos:
+    tryRequire("./permisos-hero.svg") || require("./questionMark.png"),
+  hero_placeholder:
+    tryRequire("./image 1.svg") || require("./questionMark.png"),
+  star: tryRequire("./star-one.svg") || require("./questionMark.png"),
+  star_two: tryRequire("./star-two.svg") || require("./questionMark.png"),
+  star_three: tryRequire("./star-three.svg") || require("./questionMark.png"),
+  person: tryRequire("./rh.svg") || require("./questionMark.png"),
+  telephone: tryRequire("./telephone.svg") || require("./questionMark.png"),
+  tarjeta: tryRequire("./tarjeta.svg") || require("./questionMark.png"),
+  mesa: tryRequire("./mesa-animada.svg") || require("./questionMark.png"),
+  arbol: tryRequire("./arbol-ardilla.svg") || require("./questionMark.png"),
+  flores: tryRequire("./flores.svg") || require("./questionMark.png"),
 };

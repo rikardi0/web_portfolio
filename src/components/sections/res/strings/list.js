@@ -1,54 +1,80 @@
-import PermisosTrabajo from "../svg/PermisosTrabajo";
-import PumpPerfect from "../svg/PumpPerfect";
+import Image from "../images/index";
+import ImgProject from "../svg/ImgProject";
 
 const projectContent = {
   spanish: {
     projectList: [
       {
-        path: <PermisosTrabajo />,
+        path: <ImgProject img={Image.pump_perfect} />,
         slideImg: [
           {
-            url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+            url: Image.PF_1,
           },
           {
-            url: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+            url: Image.PF_2,
+          },
+          {
+            url: Image.PF_3,
           },
         ],
-        title: "PIPIPI ",
+        title: "Pump Perfect",
         description: "Lo mejor de lo mejor",
-        technologies: ["a", "b", "c"],
+        technologies: ["Flutter", "Dart"],
       },
       {
-        path: <PermisosTrabajo />,
+        path: <ImgProject img={Image.trabajo_permiso} />,
         slideImg: [
           {
-            url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+            url: Image.TP_1,
           },
           {
-            url: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+            url: Image.TP_2,
+          },
+          {
+            url: Image.TP_3,
           },
         ],
-        title: "PIPIPI ",
+        title: "Permisos de Trabajo",
         description: "Lo mejor de lo mejor",
-        technologies: ["a", "b", "c"],
+        technologies: ["Firebase", "Flutter", "Dart"],
       },
     ],
   },
   english: {
     projectList: [
       {
-        path: <PumpPerfect />,
+        path: <ImgProject img={Image.pump_perfect} />,
         slideImg: [
           {
-            url: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+            url: Image.PF_1,
           },
           {
-            url: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+            url: Image.PF_2,
+          },
+          {
+            url: Image.PF_3,
           },
         ],
-        title: "PIPIPI INGLES",
+        title: "Pump Perfect",
         description: "Lo mejor de lo mejor",
-        technologies: ["a", "b", "c"],
+        technologies: ["Flutter", "Dart"],
+      },
+      {
+        path: <ImgProject img={Image.trabajo_permiso} />,
+        slideImg: [
+          {
+            url: Image.TP_1,
+          },
+          {
+            url: Image.TP_2,
+          },
+          {
+            url: Image.TP_3,
+          },
+        ],
+        title: "Work Permissions",
+        description: "Lo mejor de lo mejor",
+        technologies: ["Firebase", "Flutter", "Dart"],
       },
     ],
   },

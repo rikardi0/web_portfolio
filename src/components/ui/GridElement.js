@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Slide } from "react-slideshow-image";
-import Jump from "react-reveal/Jump";
 
 import CloseTab from "../sections/res/svg/CloseTab";
 import "./Modal.css";
@@ -66,15 +65,13 @@ function GridElement(props) {
 
   return (
     <>
-      <Jump>
-        <div
-          onClick={toggleModal}
-          style={{ backgroundColor: color }}
-          className="project-border"
-        >
-          {path_img}
-        </div>
-      </Jump>
+      <div
+        onClick={toggleModal}
+        style={{ backgroundColor: color }}
+        className="project-border"
+      >
+        {path_img}
+      </div>
 
       {modal && (
         <div className="modal">

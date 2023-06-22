@@ -1,6 +1,16 @@
 a {
   text-decoration: none;
 }
+#contact-btn {
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  top: 70vh;
+  left: 0.25vw;
+  height: 40px;
+  width: 40px;
+  animation: bounceIn 1.25s ease-out;
+}
 
 #spacer {
   background-color: rgba(7, 148, 219, 255);
@@ -41,7 +51,7 @@ a {
   position: fixed;
   z-index: 1;
   left: 5px;
-  top: 12%;
+  top: 15%;
   animation: bounceIn 1s ease-out;
 }
 .nav {
@@ -224,7 +234,7 @@ a {
 
 @keyframes bounceIn {
   0% {
-    transform: translateY(100%);
+    transform: translateY(200%);
     opacity: 0;
   }
   60% {
@@ -239,6 +249,10 @@ a {
 }
 
 @media only screen and (min-width: 850px) {
+  #contact-btn {
+    top: 79vh;
+    left: 20px;
+  }
   #language {
     top: 5vh;
     left: 92vw;
@@ -253,12 +267,20 @@ a {
     left: 30px;
   }
   .line-spacer {
-    height: 55vh;
+    height: 48vh;
   }
   .nav-link:hover ~ .nav-label {
     opacity: 1;
   }
   #spacer {
     border-top: 0.35vh solid black;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .nav-section {
+    visibility: hidden;
+  }
+  #contact-btn {
+    top: 60vh;
   }
 }

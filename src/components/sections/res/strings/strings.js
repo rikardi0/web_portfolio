@@ -9,10 +9,15 @@ const strings = {
       aboutTitle: "About-Me",
       projectsTitle: "Projects",
       skillTitle: "skill-set",
-      contact: "Let's team up!",
+      contact: "Contact",
+      contactDescription:
+        "If you have any questions about my services or just want to say hello, feel free to reach out to me through my social media channels",
       download: "Download CV",
-      about:
-        "I'm an 23-year-old mechanical engineer with a passion for app and web development. I specialize in flutter and java, and my proficiency in design sets me apart from the competition. Let's work together to bring your vision to life!",
+      about: [
+        "I'm a 23-year-old mechanical engineer with a strong passion for app and web development.",
+        "During my academic journey as a mechanical engineer, I realized that my true passion lay in the intersection of engineering and programming, where I could channel my creativity, problem-solving skills, and attention to detail.",
+      ],
+      call: "Collaborate. Innovate. Achieve.",
       skill: [
         `Flutter${rightArrow}`,
         `J a v a ${downArrow}`,
@@ -25,10 +30,15 @@ const strings = {
       aboutTitle: "Sobre-Mi",
       projectsTitle: "Proyectos",
       skillTitle: "habilidad",
-      contact: "Hagamos Equipo!",
+      contact: "Contacto",
+      contactDescription:
+        "Si tienes alguna pregunta sobre mis servicios, no dudes en contactarme a través de mis redes sociales.",
       download: "Descargar CV",
-      about:
-        "Soy un ingeniero mecánico de 23 años apasionado por el desarrollo web y de aplicaciones. Me especializo en flutter y java, y mi competencia en diseño me diferencia. ¡Trabajemos juntos para cumplir su visión!",
+      about: [
+        "Soy un ingeniero mecánico de 23 años con una gran pasión por el desarrollo de aplicaciones y páginas web",
+        "Durante mi trayectoria académica como ingeniero mecánico, me di cuenta de que mi verdadera pasión se encontraba en la intersección entre la ingeniería y la programación, donde podía canalizar mi creatividad, habilidades para resolver problemas y atención al detalle.",
+      ],
+      call: "Colabora. Innova. Consigue.",
       skill: [
         `Flutter${rightArrow}`,
         `J a v a ${downArrow}`,

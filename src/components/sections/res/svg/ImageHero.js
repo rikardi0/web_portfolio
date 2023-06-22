@@ -8,7 +8,6 @@ const ImageHero = (props) => {
   let heightScreen = size - 5.5;
   let width = size / 2;
   let widthScreen = width - 12;
-  let detailName = ["details-left", "details-center", "details-right"];
   return (
     <div
       id="border"
@@ -30,7 +29,7 @@ const ImageHero = (props) => {
           width: widthScreen,
         }}
       >
-        <div id={detailName[type]}></div>
+        <object data={type} title="image/svg+xml" />
       </div>
     </div>
   );

@@ -1,19 +1,33 @@
 import React, { useState, useEffect } from "react";
+
+import images from "../sections/res/images/index";
+
 import Home from "../sections/home/Home";
 import About from "../sections/about/About";
 import Projects from "../sections/projects/Projects";
-import Contact from "../sections/contact/Contact";
+import Footer from "../sections/footer/Footer";
+import ModalContact from "../sections/modal-contact/ModalContact";
 import list from "../sections/res/strings/list";
 import strings from "../sections/res/strings/strings";
 import NavBar from "../ui/NavBar";
 import "./Body.css";
+import "../sections/modal-contact/ModalContact.css";
 
 export default function Body() {
   useEffect(() => {
     NavBar();
   }, []);
-  const [language, setLanguage] = useState(true);
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
+  if (modal) {
+    document.body.classList.add("active-modal-contact");
+  } else {
+    document.body.classList.remove("active-modal-contact");
+  }
+  const [language, setLanguage] = useState(true);
   let contentBody = language ? strings.body.english : strings.body.spanish;
   let projectList = language
     ? list.english.projectList
@@ -21,6 +35,12 @@ export default function Body() {
 
   return (
     <>
+      <img
+        id="contact-btn"
+        onClick={toggleModal}
+        src={images.telephone}
+        alt="contact btn"
+      ></img>
       <Home description={contentBody.description} />
       <nav id="language">
         <input
@@ -42,7 +62,18 @@ export default function Body() {
         <div id="spacer-mid-details"></div>
       </div>
       <Projects title={contentBody.projectsTitle} projectList={projectList} />
-      <Contact titleContact={contentBody.contact} />
+      <Footer titleContact={contentBody.contact} />
+      {modal && (
+        <div className="modal-contact">
+          <div onClick={toggleModal} className="overlay-contact"></div>
+          <div id="modal-container-contact">
+            <ModalContact
+              contactTitle={contentBody.contact}
+              contentText={contentBody.contactDescription}
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }

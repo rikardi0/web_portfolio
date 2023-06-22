@@ -12,20 +12,42 @@
   justify-content: center;
   align-self: center;
   gap: 2.5vw;
-  max-width: 950px;
+  max-width: 1350px;
   transition: all 0.5s;
 }
 #decoration-description {
   margin-top: 1vh;
-  width: 90vw;
+  width: 45vw;
   display: flex;
   flex-direction: row-reverse;
   padding-top: 3vh;
-  margin-left: 25px;
+  margin-left: 35px;
   align-items: flex-start;
   justify-content: center;
 }
-
+#star-container {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  gap: 1vh;
+  display: flex;
+  flex-direction: column;
+}
+.stars {
+  transition: all 0.5s;
+}
+#star-one {
+  margin-left: 30px;
+  height: 45px;
+}
+#star-two {
+  margin-left: 120px;
+  height: 40px;
+}
+#star-three {
+  margin-left: 20px;
+  height: 35px;
+}
 .description {
   padding-inline: 0vw;
   color: rgba(0, 0, 0, 1);
@@ -33,42 +55,85 @@
   font-weight: 300;
   line-height: 1.55em;
 }
+
 #hero {
   margin-inline: auto;
   margin-top: 10px;
-  padding: 10px;
+  padding-inline: 10px;
   gap: 25px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 145px;
+  height: 165px;
   width: 80vw;
-  background-color: #b82515;
+  max-width: 1500px;
+  background-color: #c0a29f;
   opacity: 1;
   background: radial-gradient(
       circle,
       transparent 20%,
-      #b82515 20%,
-      #b82515 80%,
+      #c04133 20%,
+      #c04133 80%,
       transparent 80%,
       transparent
     ),
     radial-gradient(
         circle,
         transparent 20%,
-        #b82515 20%,
-        #b82515 80%,
+        #c04133 20%,
+        #c04133 80%,
         transparent 80%,
         transparent
       )
       10px 10px,
     linear-gradient(#000000 0.8px, transparent 0.8px) 0 -0.4px,
-    linear-gradient(90deg, #000000 0.8px, #b82515 0.8px) -0.4px 0;
+    linear-gradient(90deg, #000000 0.8px, #c04133 0.8px) -0.4px 0;
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
   border: 0.15vh solid #000000;
   border-bottom: 0 solid rgb(0, 0, 0);
 }
+#person {
+  height: 33vh;
+  max-height: 200px;
+  margin-bottom: -25px;
+}
+#mesa {
+  max-height: 300px;
+  margin-bottom: -2px;
+  height: 44vh;
+}
+#flor {
+  max-height: 100px;
+  height: 11vh;
+  margin-bottom: -2px;
+}
+#arbol {
+  max-height: 300px;
+  margin-bottom: -1px;
+  height: 40vh;
+}
+@media only screen and (min-width: 470px) {
+  #star-container {
+    top: 5%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
 
+  #star-one {
+    margin-top: 100px;
+    height: 45px;
+  }
+  #star-two {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 65px;
+  }
+  #star-three {
+    margin-top: 110px;
+    height: 35px;
+  }
+}
 @media only screen and (min-width: 600px) {
   #head {
     margin-left: 5vw;
@@ -80,17 +145,23 @@
 @media only screen and (min-width: 750px) {
   #head {
     margin-left: 10vw;
+    margin-top: 30px;
     align-self: flex-start;
   }
   #hero {
-    height: 150px;
+    height: 190px;
     border: 0.35vh solid #000000;
     border-bottom: 0px;
   }
   #decoration-description {
-    margin-left: 9vw;
-    width: 70vw;
-    justify-content: space-between;
+    margin-left: 10vw;
+    justify-content: space-around;
+  }
+  #star-container {
+    right: 5%;
+    top: 18%;
+    gap: 0vw;
+    display: flex;
   }
   .description {
     margin-top: 0.85vh;
@@ -98,11 +169,38 @@
     width: 45vw;
     font-size: 3em;
   }
+
+  #star-one {
+    height: 80px;
+  }
+  #star-two {
+    height: 70px;
+  }
+  #star-three {
+    height: 65px;
+  }
 }
 @media only screen and (min-width: 900px) {
   #hero {
     margin-top: 45px;
-    height: 42vh;
+    height: 250px;
+  }
+  #star-container {
+    right: 10%;
+    top: 18%;
+    gap: 4vw;
+  }
+  #star-one {
+    margin-top: 7vh;
+    height: 60px;
+  }
+  #star-two {
+    height: 70px;
+    margin-top: 10vh;
+  }
+  #star-three {
+    margin-top: 8vh;
+    height: 55px;
   }
 }
 @keyframes fadeIn {
