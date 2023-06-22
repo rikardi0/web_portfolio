@@ -1,7 +1,3 @@
-import Telephone from "../sections/res/svg/Telephone";
-import React from "react";
-import { createRoot } from "react-dom/client";
-
 export default function activateNavigation() {
   const sections = document.querySelectorAll(".section");
   const navContainer = document.createElement("nav");
@@ -9,10 +5,6 @@ export default function activateNavigation() {
   navSection.classList.add("nav-section");
 
   const containerButton = document.createElement("div");
-  const img = document.createElement("div");
-  img.className = "telephone";
-  const root = createRoot(img);
-  root.render(<Telephone />);
   const contactButton = document.createElement("div");
   const lineSpacer = document.createElement("div");
   const navItems = Array.from(sections).map((section) => {
@@ -26,7 +18,6 @@ export default function activateNavigation() {
   containerButton.classList.add("container-button");
   contactButton.classList.add("contact-button");
   lineSpacer.classList.add("line-spacer");
-  contactButton.appendChild(img);
   containerButton.appendChild(contactButton);
   containerButton.appendChild(lineSpacer);
   navContainer.classList.add("nav");
