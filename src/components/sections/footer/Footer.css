@@ -1,0 +1,44 @@
+#contact {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 218, 8);
+  border-top: 2px solid black;
+}
+#footer-text {
+  height: fit-content;
+  align-items: center;
+  background-color: black;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-inline: 5px;
+  margin-left: 5px;
+  color: rgb(255, 218, 8);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.svg-item {
+  transition: all 0.25s;
+  width: 100%;
+  height: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-right: 5px;
+  max-width: 25px;
+  max-height: 25px;
+}
+.svg-item:hover {
+  rotate: 15deg;
+}
+@media only screen and (min-width: 900px) {
+  #footer-text {
+    margin-left: 2.5vw;
+    font-size: 1.5rem;
+  }
+  .svg-item {
+    max-width: 45px;
+    max-height: 45px;
+  }
+}

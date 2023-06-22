@@ -1,0 +1,81 @@
+body.active-modal-contact {
+  overflow-y: hidden;
+}
+
+.modal-contact,
+.overlay-contact {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.overlay-contact {
+  background: rgba(0, 0, 0, 0.767);
+}
+#title-logo {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+#img-tarjeta {
+  height: 75px;
+  padding-inline-start: 15px;
+  padding-block: 15px;
+}
+#modal-container-contact {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  transition: all 0.15s;
+  width: 95vw;
+  height: fit-content;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+#modal-title {
+  user-select: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  align-self: flex-start;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+#modal-content-contact {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#contact-svg-container {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid black;
+  background-color: rgb(156, 156, 156);
+  width: 100%;
+}
+@media only screen and (min-width: 900px) {
+  #modal-container-contact {
+    width: 40vw;
+    padding-inline: 25px;
+  }
+  #contact-svg-container {
+    padding-inline: 25px;
+  }
+  #img-tarjeta {
+    height: 120px;
+  }
+  #modal-content-contact {
+    font-size: 1.25rem;
+  }
+}
