@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.e635d77f.css",
-    "main.js": "/web_portfolio/static/js/main.1e70c5e5.js",
+    "main.css": "/web_portfolio/static/css/main.991da843.css",
+    "main.js": "/web_portfolio/static/js/main.b2dbbab7.js",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
@@ -11,6 +11,8 @@
     "static/media/Throwup-Fill.woff2": "/web_portfolio/static/media/Throwup-Fill.7e134ff0cdd7e9a3c89d.woff2",
     "static/media/rh.svg": "/web_portfolio/static/media/rh.91059291aa70df765ffa.svg",
     "static/media/star-two.svg": "/web_portfolio/static/media/star-two.4454157c52aea403fd7e.svg",
+    "static/media/arbol-ardilla.svg": "/web_portfolio/static/media/arbol-ardilla.93068109f0d2f1f5871f.svg",
+    "static/media/mesa-animada.svg": "/web_portfolio/static/media/mesa-animada.3647f648f372688b213d.svg",
     "static/media/star-one.svg": "/web_portfolio/static/media/star-one.2d5379d2b482d4ee1319.svg",
     "static/media/TP-1.png": "/web_portfolio/static/media/TP-1.831d360e6b09c9d82a12.png",
     "static/media/star-three.svg": "/web_portfolio/static/media/star-three.545af537bae2f54df6e0.svg",
@@ -23,17 +25,18 @@
     "static/media/pump_perfect.png": "/web_portfolio/static/media/pump_perfect.c7a594e10830ac0277bf.png",
     "static/media/trabajo_permisos.png": "/web_portfolio/static/media/trabajo_permisos.a35ded3eb79ba1fe69b8.png",
     "static/media/PF-2.png": "/web_portfolio/static/media/PF-2.b92728675f8d9e3703cd.png",
-    "static/media/mesa.svg": "/web_portfolio/static/media/mesa.8cb288db1302ccaa6d70.svg",
     "static/media/flores.svg": "/web_portfolio/static/media/flores.4443a7adada108c55d5d.svg",
+    "static/media/dart.svg": "/web_portfolio/static/media/dart.567c9e876cb41827e1bd.svg",
+    "static/media/flutter.svg": "/web_portfolio/static/media/flutter.5e0ebde82050c8fcdf61.svg",
+    "static/media/firebase.svg": "/web_portfolio/static/media/firebase.8f69a13150a1594d8fb7.svg",
     "static/media/tarjeta.svg": "/web_portfolio/static/media/tarjeta.0e1ce6bca7aaacb1eaf2.svg",
     "index.html": "/web_portfolio/index.html",
-    "static/media/arbol.svg": "/web_portfolio/static/media/arbol.5694389bff7cd34d3139.svg",
     "static/media/telephone.svg": "/web_portfolio/static/media/telephone.5a9e6218af48d236bc3a.svg",
-    "main.e635d77f.css.map": "/web_portfolio/static/css/main.e635d77f.css.map",
-    "main.1e70c5e5.js.map": "/web_portfolio/static/js/main.1e70c5e5.js.map"
+    "main.991da843.css.map": "/web_portfolio/static/css/main.991da843.css.map",
+    "main.b2dbbab7.js.map": "/web_portfolio/static/js/main.b2dbbab7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e635d77f.css",
-    "static/js/main.1e70c5e5.js"
+    "static/css/main.991da843.css",
+    "static/js/main.b2dbbab7.js"
   ]
 }
