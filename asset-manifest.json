@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.991da843.css",
-    "main.js": "/web_portfolio/static/js/main.b2dbbab7.js",
+    "main.css": "/web_portfolio/static/css/main.671635cf.css",
+    "main.js": "/web_portfolio/static/js/main.e6036f11.js",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
@@ -32,11 +32,11 @@
     "static/media/tarjeta.svg": "/web_portfolio/static/media/tarjeta.0e1ce6bca7aaacb1eaf2.svg",
     "index.html": "/web_portfolio/index.html",
     "static/media/telephone.svg": "/web_portfolio/static/media/telephone.5a9e6218af48d236bc3a.svg",
-    "main.991da843.css.map": "/web_portfolio/static/css/main.991da843.css.map",
-    "main.b2dbbab7.js.map": "/web_portfolio/static/js/main.b2dbbab7.js.map"
+    "main.671635cf.css.map": "/web_portfolio/static/css/main.671635cf.css.map",
+    "main.e6036f11.js.map": "/web_portfolio/static/js/main.e6036f11.js.map"
   },
   "entrypoints": [
-    "static/css/main.991da843.css",
-    "static/js/main.b2dbbab7.js"
+    "static/css/main.671635cf.css",
+    "static/js/main.e6036f11.js"
   ]
 }
