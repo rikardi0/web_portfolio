@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Slide } from "react-slideshow-image";
 
-import CloseTab from "../sections/res/svg/CloseTab";
 import "./Modal.css";
 
 export default function ListProjects(props) {
@@ -43,6 +42,7 @@ function GridElement(props) {
 
   const [imageSize, setSize] = useState("div-style");
   const [modalContainer, setContainer] = useState("modal-content");
+  const [techFlex, setTech] = useState("show-tech");
   const [closeModal, hideClose] = useState("close-modal");
 
   const handleClick = () => {
@@ -50,10 +50,12 @@ function GridElement(props) {
       setSize("all-img");
       setContainer("modal-hidden");
       hideClose("close-hidden");
+      setTech("hide-tech");
     } else {
       setSize("div-style");
       setContainer("modal-content");
       hideClose("close-modal");
+      setTech("show-tech");
     }
   };
 
@@ -79,19 +81,26 @@ function GridElement(props) {
           <div id="modal-container" className={modalContainer}>
             <h2>{title_project}</h2>
             {slideShow()}
-            <p>{description}</p>
-            <div>
+            <div id="list-tech">
               {technologies.map((e) => (
-                <ul>
-                  <li key={e}>
-                    <span>{e}</span>
-                  </li>
-                </ul>
+                <div className={techFlex}>
+                  <a style={{ color: "black" }} href={e.link}>
+                    {" "}
+                    {e.title}{" "}
+                  </a>
+                  <img
+                    href={e.link}
+                    src={e.url}
+                    alt={`Technology use to build, in this case ${e.title}`}
+                  ></img>
+                </div>
               ))}
             </div>
-            <button className={closeModal} onClick={toggleModal}>
-              <CloseTab />
-            </button>
+            <div id="content-description">
+              {description.map((e) => (
+                <p>{e}</p>
+              ))}
+            </div>
           </div>
         </div>
       )}

@@ -35,4 +35,7 @@ export default {
   mesa: tryRequire("./mesa-animada.svg") || require("./questionMark.png"),
   arbol: tryRequire("./arbol-ardilla.svg") || require("./questionMark.png"),
   flores: tryRequire("./flores.svg") || require("./questionMark.png"),
+  flutter: tryRequire("./flutter.svg") || require("./questionMark.png"),
+  firebase: tryRequire("./firebase.svg") || require("./questionMark.png"),
+  dart: tryRequire("./dart.svg") || require("./questionMark.png"),
 };

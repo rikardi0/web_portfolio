@@ -2,6 +2,7 @@
 
 body.active-modal {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .modal,
@@ -22,11 +23,22 @@ body.active-modal {
 #modal-container {
   z-index: 10;
   position: absolute;
+  max-height: 88vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 3px;
   transition: all 0.15s;
+}
+#list-tech {
+  display: flex;
+  gap: 40px;
+  margin: auto;
+  line-height: 0px;
+  padding: 0px;
+  width: fit-content;
 }
 
 .modal-content {
@@ -40,6 +52,10 @@ body.active-modal {
   font-size: 1.5rem;
   line-height: 0px;
 }
+.modal-content ul {
+  margin: 0px;
+  padding-inline: 10px;
+}
 .modal-content p {
   font-size: 0.75rem;
   font-weight: 400;
@@ -50,7 +66,15 @@ body.active-modal {
   line-height: 1rem;
   list-style-type: none;
 }
-
+.show-tech {
+  font-size: 0.75rem;
+}
+.show-tech img {
+  height: 10px;
+}
+.hide-tech {
+  display: none;
+}
 .modal-hidden {
   background: #ffffff00;
   width: 100vw;
@@ -62,10 +86,11 @@ body.active-modal {
   display: none;
 }
 .close-modal {
+  z-index: 100;
   background-color: rgb(129, 151, 212);
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: 22%;
+  left: 1%;
   border-radius: 100%;
   border: 0px;
   padding: 5px 7px;
@@ -80,32 +105,37 @@ body.active-modal {
 #img-project {
   display: flex;
   margin: auto;
-  margin-top: 20px;
   align-items: center;
   justify-content: center;
   background-size: cover;
   transition: all 0.35s;
 }
 .div-style {
-  height: 100px;
-  width: 205px;
+  max-height: 255px;
+  height: 16vw;
+  min-height: 100px;
+  width: auto;
 }
 .all-img {
-  height: 150px;
-  width: 308px;
+  max-height: 900px;
+  height: 25vw;
+  min-height: 150px;
+  width: auto;
+}
+
+@media only screen and (min-width: 500px) {
+  .modal-content {
+    width: 40vw;
+  }
 }
 @media only screen and (min-width: 800px) {
-  .div-style {
-    height: 215px;
-    width: 441px;
+  .show-tech {
+    font-size: 1rem;
   }
-  .all-img {
-    height: 400px;
-    width: 820px;
+  .show-tech img {
+    height: 20px;
   }
-  .modal-content {
-    width: 35vw;
-  }
+
   .modal-hidden {
     background: #ffffff00;
     width: 65vw;
