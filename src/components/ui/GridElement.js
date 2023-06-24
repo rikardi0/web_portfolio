@@ -16,6 +16,7 @@ export default function ListProjects(props) {
             description={element.description}
             technologies={element.technologies}
             slide_img={element.slideImg}
+            figma={element.figma}
           />
         );
       })}
@@ -31,6 +32,7 @@ function GridElement(props) {
     title_project,
     description,
     technologies,
+    figma,
   } = props;
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
@@ -38,6 +40,7 @@ function GridElement(props) {
     setSize("div-style");
     setContainer("modal-content");
     hideClose("close-modal");
+    setTech("show-tech");
   };
 
   const [imageSize, setSize] = useState("div-style");
@@ -98,7 +101,23 @@ function GridElement(props) {
             </div>
             <div id="content-description">
               {description.map((e) => (
-                <p>{e}</p>
+                <div>
+                  <p>{e.first}</p>
+                  <p>
+                    {e.second}
+                    <b>
+                      {figma}
+                      <a
+                        style={{ color: "blue" }}
+                        target="blank"
+                        href={e.figma}
+                      >
+                        {" "}
+                        Figma
+                      </a>
+                    </b>
+                  </p>
+                </div>
               ))}
             </div>
           </div>
