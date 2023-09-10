@@ -106,14 +106,12 @@ function GridElement(props) {
                   <p>
                     {e.second}
                     <b>
-                      {figma}
                       <a
                         style={{ color: "blue" }}
                         target="blank"
                         href={e.figma}
                       >
-                        {" "}
-                        Figma
+                        {figma}{" "}
                       </a>
                     </b>
                   </p>

@@ -16,10 +16,15 @@ export default {
   TP_2: tryRequire("./TP-2.png") || require("./questionMark.png"),
   TP_3: tryRequire("./TP-3.png") || require("./questionMark.png"),
 
+  WS_1: tryRequire("./dron-model.png") || require("./questionMark.png"),
+  WS_2: tryRequire("./catalogo-web.png") || require("./questionMark.png"),
+  WS_3: tryRequire("./menu-web.png") || require("./questionMark.png"),
+
   pump_perfect:
     tryRequire("./pump_perfect.png") || require("./questionMark.png"),
   trabajo_permiso:
     tryRequire("./trabajo_permisos.png") || require("./questionMark.png"),
+  web_model: tryRequire("./conceptual-3D.png") || require("./questionMark.png"),
 
   hero_pump: tryRequire("./pump-hero.svg") || require("./questionMark.png"),
   hero_permisos:
@@ -38,4 +43,6 @@ export default {
   flutter: tryRequire("./flutter.svg") || require("./questionMark.png"),
   firebase: tryRequire("./firebase.svg") || require("./questionMark.png"),
   dart: tryRequire("./dart.svg") || require("./questionMark.png"),
+  react: tryRequire("./react.svg") || require("./questionMark.png"),
+  js: tryRequire("./js.svg") || require("./questionMark.png"),
 };

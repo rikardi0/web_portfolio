@@ -20,7 +20,7 @@ const strings = {
       call: "Collaborate. Innovate. Achieve.",
       skill: [
         `Flutter${rightArrow}`,
-        `J a v a ${downArrow}`,
+        `R e a c t ${downArrow}`,
         `Front-end ${homeArrow}`,
       ],
     },
