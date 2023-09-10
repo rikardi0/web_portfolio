@@ -1,11 +1,15 @@
 {
   "files": {
     "main.css": "/web_portfolio/static/css/main.671635cf.css",
-    "main.js": "/web_portfolio/static/js/main.9db87d20.js",
+    "main.js": "/web_portfolio/static/js/main.244c551f.js",
+    "static/media/catalogo-web.png": "/web_portfolio/static/media/catalogo-web.edad5c2d1602e2b745ce.png",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
+    "static/media/conceptual-3D.png": "/web_portfolio/static/media/conceptual-3D.c346f18eb623176a5a29.png",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
+    "static/media/dron-model.png": "/web_portfolio/static/media/dron-model.c783ce39f606dea1f79e.png",
     "static/media/permisos-hero.svg": "/web_portfolio/static/media/permisos-hero.2989377f4e7617a11f5f.svg",
+    "static/media/menu-web.png": "/web_portfolio/static/media/menu-web.168df52936e9636ca31d.png",
     "static/media/tienda.svg": "/web_portfolio/static/media/tienda.7ffd892f705bf8697e9b.svg",
     "static/media/pump-hero.svg": "/web_portfolio/static/media/pump-hero.bd9c84ed2b2fff5b50b0.svg",
     "static/media/Throwup-Fill.woff2": "/web_portfolio/static/media/Throwup-Fill.7e134ff0cdd7e9a3c89d.woff2",
@@ -25,18 +29,20 @@
     "static/media/pump_perfect.png": "/web_portfolio/static/media/pump_perfect.c7a594e10830ac0277bf.png",
     "static/media/trabajo_permisos.png": "/web_portfolio/static/media/trabajo_permisos.a35ded3eb79ba1fe69b8.png",
     "static/media/PF-2.png": "/web_portfolio/static/media/PF-2.b92728675f8d9e3703cd.png",
+    "static/media/react.svg": "/web_portfolio/static/media/react.abf1cf2cd03750fd511f.svg",
     "static/media/flores.svg": "/web_portfolio/static/media/flores.4443a7adada108c55d5d.svg",
     "static/media/dart.svg": "/web_portfolio/static/media/dart.567c9e876cb41827e1bd.svg",
     "static/media/flutter.svg": "/web_portfolio/static/media/flutter.5e0ebde82050c8fcdf61.svg",
+    "static/media/js.svg": "/web_portfolio/static/media/js.fef7215d0d3e578f01ad.svg",
     "static/media/firebase.svg": "/web_portfolio/static/media/firebase.8f69a13150a1594d8fb7.svg",
     "static/media/tarjeta.svg": "/web_portfolio/static/media/tarjeta.0e1ce6bca7aaacb1eaf2.svg",
     "index.html": "/web_portfolio/index.html",
     "static/media/telephone.svg": "/web_portfolio/static/media/telephone.5a9e6218af48d236bc3a.svg",
     "main.671635cf.css.map": "/web_portfolio/static/css/main.671635cf.css.map",
-    "main.9db87d20.js.map": "/web_portfolio/static/js/main.9db87d20.js.map"
+    "main.244c551f.js.map": "/web_portfolio/static/js/main.244c551f.js.map"
   },
   "entrypoints": [
     "static/css/main.671635cf.css",
-    "static/js/main.9db87d20.js"
+    "static/js/main.244c551f.js"
   ]
 }
