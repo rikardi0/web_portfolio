@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/web_portfolio/static/css/main.671635cf.css",
-    "main.js": "/web_portfolio/static/js/main.6b916901.js",
+    "main.js": "/web_portfolio/static/js/main.8dea2b94.js",
+    "static/media/IC-2.png": "/web_portfolio/static/media/IC-2.fef0127f72f739918f92.png",
+    "static/media/IC-3.png": "/web_portfolio/static/media/IC-3.96f43b637ca1c069f6c1.png",
     "static/media/ST-2.png": "/web_portfolio/static/media/ST-2.91073369dc9e333b117e.png",
     "static/media/soter.png": "/web_portfolio/static/media/soter.2f3f9377f887c59a9a02.png",
+    "static/media/IC-1.png": "/web_portfolio/static/media/IC-1.55428833355a14266fdb.png",
+    "static/media/iconic.png": "/web_portfolio/static/media/iconic.a90a3be1902f8c48cb63.png",
     "static/media/catalogo-web.png": "/web_portfolio/static/media/catalogo-web.edad5c2d1602e2b745ce.png",
     "static/media/ST-1.png": "/web_portfolio/static/media/ST-1.ac79053befa100c84a96.png",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
@@ -44,10 +48,10 @@
     "index.html": "/web_portfolio/index.html",
     "static/media/telephone.svg": "/web_portfolio/static/media/telephone.5a9e6218af48d236bc3a.svg",
     "main.671635cf.css.map": "/web_portfolio/static/css/main.671635cf.css.map",
-    "main.6b916901.js.map": "/web_portfolio/static/js/main.6b916901.js.map"
+    "main.8dea2b94.js.map": "/web_portfolio/static/js/main.8dea2b94.js.map"
   },
   "entrypoints": [
     "static/css/main.671635cf.css",
-    "static/js/main.6b916901.js"
+    "static/js/main.8dea2b94.js"
   ]
 }
