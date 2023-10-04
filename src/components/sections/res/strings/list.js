@@ -178,7 +178,7 @@ const projectContent = {
               "Esta pagina web, desarrollada con tecnologías modernas y creativas. Utilizando React como base, hemos creado una experiencia inmersiva en la que los usuarios pueden explorar los zapatos mas icnoicos de la NBA.",
             second:
               "Gracias a Three.js, hemos logrado una visualización realista y una interacción fluida en de cada par, permitiendo a los visitantes navegar y girar los modelos para una experiencia única en línea.",
-            figma: "https://shoe-models.vercel.app/",
+            figma: "https://iconic-sand.vercel.app",
           },
         ],
         technologies: WebIconicTech,
@@ -267,7 +267,7 @@ const projectContent = {
               "This website, developed using modern and creative technologies and built on React, delivers an immersive experience where users can explore the most iconic NBA shoes. ",
             second:
               "Thanks to Three.js, we've achieved realistic visualization and smooth interaction for each pair, allowing visitors to navigate and rotate the models for a unique online experience.",
-            figma: "https://shoe-models.vercel.app/",
+            figma: "https://iconic-sand.vercel.app",
           },
         ],
         technologies: WebIconicTech,
