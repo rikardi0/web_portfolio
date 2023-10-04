@@ -26,6 +26,11 @@ const JavaScript = {
   link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   title: "JavaScript",
 };
+const WordPress = {
+  url: Image.wordpress,
+  link: "https://wordpress.com/",
+  title: "WordPress",
+};
 
 const PumpPerfectImageList = [
   {
@@ -64,6 +69,18 @@ const WebSWImageList = [
   },
 ];
 const WebSolidworksTech = [React, JavaScript];
+const WebSoterImageList = [
+  {
+    url: Image.ST_1,
+  },
+  {
+    url: Image.ST_2,
+  },
+  {
+    url: Image.ST_3,
+  },
+];
+const WebSoterTech = [WordPress];
 
 const projectContent = {
   spanish: {
@@ -120,6 +137,23 @@ const projectContent = {
         ],
         technologies: WebSolidworksTech,
       },
+      {
+        figma: " Clickea el link para visitar la página",
+        path: <ImgProject img={Image.soter} />,
+        slideImg: WebSoterImageList,
+
+        title: "Soter",
+        description: [
+          {
+            first:
+              "Para la empresa Soter se creo una experiencia de usuario atractiva y adaptable a diversos dispositivos y tamaños de pantalla. El sitio web presenta de manera concisa y accesible información detallada sobre los servicios de seguridad ofrecidos, así como los cursos educativos disponibles para los visitantes interesados",
+            second:
+              "Se utilizó la plataforma de desarrollo WordPress para crear la interfaz de usuario.La elección de WordPress garantizó una experiencia de usuario fluida y efectiva, permitiendo a los visitantes explorar fácilmente los servicios ofrecidos",
+            figma: "https://sotersorg.wordpress.com/",
+          },
+        ],
+        technologies: WebSoterTech,
+      },
     ],
   },
   english: {
@@ -174,6 +208,23 @@ const projectContent = {
           },
         ],
         technologies: WebSolidworksTech,
+      },
+      {
+        figma: " Clickea el link para visitar la página",
+        path: <ImgProject img={Image.soter} />,
+        slideImg: WebSoterImageList,
+
+        title: "Soter",
+        description: [
+          {
+            first:
+              "For the company Soter, an attractive and responsive user experience was created across various devices and screen sizes. The website presents detailed information concisely and accessibly about the security services offered, as well as the educational courses available for interested visitors.",
+            second:
+              "The WordPress development platform was used to create the user interface. The choice of WordPress ensured a smooth and effective user experience, allowing visitors to easily explore the services offered",
+            figma: "https://sotersorg.wordpress.com/",
+          },
+        ],
+        technologies: WebSoterTech,
       },
     ],
   },

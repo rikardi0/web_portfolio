@@ -20,11 +20,16 @@ export default {
   WS_2: tryRequire("./catalogo-web.png") || require("./questionMark.png"),
   WS_3: tryRequire("./menu-web.png") || require("./questionMark.png"),
 
+  ST_1: tryRequire("./ST-1.png") || require("./questionMark.png"),
+  ST_2: tryRequire("./ST-2.png") || require("./questionMark.png"),
+  ST_3: tryRequire("./ST-3.png") || require("./questionMark.png"),
+
   pump_perfect:
     tryRequire("./pump_perfect.png") || require("./questionMark.png"),
   trabajo_permiso:
     tryRequire("./trabajo_permisos.png") || require("./questionMark.png"),
   web_model: tryRequire("./conceptual-3D.png") || require("./questionMark.png"),
+  soter: tryRequire("./soter.png") || require("./questionMark.png"),
 
   hero_pump: tryRequire("./pump-hero.svg") || require("./questionMark.png"),
   hero_permisos:
@@ -45,4 +50,5 @@ export default {
   dart: tryRequire("./dart.svg") || require("./questionMark.png"),
   react: tryRequire("./react.svg") || require("./questionMark.png"),
   js: tryRequire("./js.svg") || require("./questionMark.png"),
+  wordpress: tryRequire("./wordpress.svg") || require("./questionMark.png"),
 };
