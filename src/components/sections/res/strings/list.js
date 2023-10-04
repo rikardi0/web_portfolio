@@ -81,6 +81,18 @@ const WebSoterImageList = [
   },
 ];
 const WebSoterTech = [WordPress];
+const WebIconicImageList = [
+  {
+    url: Image.IC_1,
+  },
+  {
+    url: Image.IC_2,
+  },
+  {
+    url: Image.IC_3,
+  },
+];
+const WebIconicTech = [React, JavaScript];
 
 const projectContent = {
   spanish: {
@@ -154,6 +166,23 @@ const projectContent = {
         ],
         technologies: WebSoterTech,
       },
+      {
+        figma: " Clickea el link para visitar la página",
+        path: <ImgProject img={Image.iconic} />,
+        slideImg: WebIconicImageList,
+
+        title: "Iconic",
+        description: [
+          {
+            first:
+              "Esta pagina web, desarrollada con tecnologías modernas y creativas. Utilizando React como base, hemos creado una experiencia inmersiva en la que los usuarios pueden explorar los zapatos mas icnoicos de la NBA.",
+            second:
+              "Gracias a Three.js, hemos logrado una visualización realista y una interacción fluida en de cada par, permitiendo a los visitantes navegar y girar los modelos para una experiencia única en línea.",
+            figma: "https://shoe-models.vercel.app/",
+          },
+        ],
+        technologies: WebIconicTech,
+      },
     ],
   },
   english: {
@@ -210,7 +239,7 @@ const projectContent = {
         technologies: WebSolidworksTech,
       },
       {
-        figma: " Clickea el link para visitar la página",
+        figma: " Click the link to see the website",
         path: <ImgProject img={Image.soter} />,
         slideImg: WebSoterImageList,
 
@@ -225,6 +254,23 @@ const projectContent = {
           },
         ],
         technologies: WebSoterTech,
+      },
+      {
+        figma: " Click the link to see the website",
+        path: <ImgProject img={Image.iconic} />,
+        slideImg: WebIconicImageList,
+
+        title: "Iconic",
+        description: [
+          {
+            first:
+              "This website, developed using modern and creative technologies and built on React, delivers an immersive experience where users can explore the most iconic NBA shoes. ",
+            second:
+              "Thanks to Three.js, we've achieved realistic visualization and smooth interaction for each pair, allowing visitors to navigate and rotate the models for a unique online experience.",
+            figma: "https://shoe-models.vercel.app/",
+          },
+        ],
+        technologies: WebIconicTech,
       },
     ],
   },

@@ -24,12 +24,17 @@ export default {
   ST_2: tryRequire("./ST-2.png") || require("./questionMark.png"),
   ST_3: tryRequire("./ST-3.png") || require("./questionMark.png"),
 
+  IC_1: tryRequire("./IC-1.png") || require("./questionMark.png"),
+  IC_2: tryRequire("./IC-2.png") || require("./questionMark.png"),
+  IC_3: tryRequire("./IC-3.png") || require("./questionMark.png"),
+
   pump_perfect:
     tryRequire("./pump_perfect.png") || require("./questionMark.png"),
   trabajo_permiso:
     tryRequire("./trabajo_permisos.png") || require("./questionMark.png"),
   web_model: tryRequire("./conceptual-3D.png") || require("./questionMark.png"),
   soter: tryRequire("./soter.png") || require("./questionMark.png"),
+  iconic: tryRequire("./iconic.png") || require("./questionMark.png"),
 
   hero_pump: tryRequire("./pump-hero.svg") || require("./questionMark.png"),
   hero_permisos:
