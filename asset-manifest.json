@@ -1,11 +1,15 @@
 {
   "files": {
     "main.css": "/web_portfolio/static/css/main.671635cf.css",
-    "main.js": "/web_portfolio/static/js/main.244c551f.js",
+    "main.js": "/web_portfolio/static/js/main.6b916901.js",
+    "static/media/ST-2.png": "/web_portfolio/static/media/ST-2.91073369dc9e333b117e.png",
+    "static/media/soter.png": "/web_portfolio/static/media/soter.2f3f9377f887c59a9a02.png",
     "static/media/catalogo-web.png": "/web_portfolio/static/media/catalogo-web.edad5c2d1602e2b745ce.png",
+    "static/media/ST-1.png": "/web_portfolio/static/media/ST-1.ac79053befa100c84a96.png",
     "static/media/Throwup-Stroke.woff": "/web_portfolio/static/media/Throwup-Stroke.a7e7e31fd05030f2c15c.woff",
     "static/media/conceptual-3D.png": "/web_portfolio/static/media/conceptual-3D.c346f18eb623176a5a29.png",
     "static/media/Throwup-Stroke.woff2": "/web_portfolio/static/media/Throwup-Stroke.75b28f4f65dfc34f9cae.woff2",
+    "static/media/ST-3.png": "/web_portfolio/static/media/ST-3.fe2787c3e5b03033864c.png",
     "static/media/Throwup-Fill.woff": "/web_portfolio/static/media/Throwup-Fill.23d946c53c8cbf7d418b.woff",
     "static/media/dron-model.png": "/web_portfolio/static/media/dron-model.c783ce39f606dea1f79e.png",
     "static/media/permisos-hero.svg": "/web_portfolio/static/media/permisos-hero.2989377f4e7617a11f5f.svg",
@@ -32,6 +36,7 @@
     "static/media/react.svg": "/web_portfolio/static/media/react.abf1cf2cd03750fd511f.svg",
     "static/media/flores.svg": "/web_portfolio/static/media/flores.4443a7adada108c55d5d.svg",
     "static/media/dart.svg": "/web_portfolio/static/media/dart.567c9e876cb41827e1bd.svg",
+    "static/media/wordpress.svg": "/web_portfolio/static/media/wordpress.28245fb413702bbcb28f.svg",
     "static/media/flutter.svg": "/web_portfolio/static/media/flutter.5e0ebde82050c8fcdf61.svg",
     "static/media/js.svg": "/web_portfolio/static/media/js.fef7215d0d3e578f01ad.svg",
     "static/media/firebase.svg": "/web_portfolio/static/media/firebase.8f69a13150a1594d8fb7.svg",
@@ -39,10 +44,10 @@
     "index.html": "/web_portfolio/index.html",
     "static/media/telephone.svg": "/web_portfolio/static/media/telephone.5a9e6218af48d236bc3a.svg",
     "main.671635cf.css.map": "/web_portfolio/static/css/main.671635cf.css.map",
-    "main.244c551f.js.map": "/web_portfolio/static/js/main.244c551f.js.map"
+    "main.6b916901.js.map": "/web_portfolio/static/js/main.6b916901.js.map"
   },
   "entrypoints": [
     "static/css/main.671635cf.css",
-    "static/js/main.244c551f.js"
+    "static/js/main.6b916901.js"
   ]
 }
